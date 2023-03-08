@@ -17,22 +17,24 @@
     #left {
         display: flex;
         width: 250px;
-        margin-left: 20px;
-        margin-top: 0px;
+        
+        margin-top: -2px;
         justify-content: space-around;
+        
     }
     
     #right {
         display: flex;
         width: 300px;
         margin-top: 5px;
-        margin-right: 150px;
+        margin-right: -100px;
+        margin-left: 5px;
         justify-content: space-around;
     }
     
     #center {
-        margin-top: 10px;
-        margin-left: 50px;
+        margin-top: 8px;
+        margin-right: -60px;
         margin-bottom: 5px;
     }
     
@@ -45,24 +47,28 @@
     }
     
     input {
-        font-size: 15px;
-        width: 200px;
-        height: 36px;
-    }
-    
-    .content {
-        height: 400px;
-        width: 100%;
-        background-image: "4_anh.png";
-        background-size: cover
+        width: 162px; 
+        height: 31px;
+        border: 1px solid #E3E4E7;
+        border-radius: 5px;
+        padding-left: 35px;
+        font-size: 12;
+        background-image: url(search_glass.png); 
+        background-repeat: no-repeat; 
+        background-position: 11px; 
+        background-size: 17px 17px; 
     }
     
     .text {
         color: black;
         position: absolute;
         top: 170px;
-        left: 135px;
+        left: 150px;
     }
+    ::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #E3E4E7;
+    opacity: 1; /* Firefox */
+}
 </style>
 
 
@@ -71,16 +77,16 @@
         <div id="left">
 
             <div class="leftitem">
-                <font face="Verdana" size="2.5"> Shop</font>
+                <font face="Verdana" size="2">Shop</font>
             </div>
             <div class="leftitem">
-                <font face="Verdana" size="2.5">Offers</font>
+                <font face="Verdana" size="2">Offers</font>
             </div>
             <div class="leftitem">
-                <font face="Verdana" size="2.5">Our Story</font>
+                <font face="Verdana" size="2">Our Story</font>
             </div>
             <div class="leftitem">
-                <font face="Verdana" size="2.5">Blog</font>
+                <font face="Verdana" size="2">Blog</font>
             </div>
         </div>
         <div id="center">
@@ -88,8 +94,7 @@
         </div>
         <div id="right">
             <div class="rightitem">
-                <input type="search" placeholder="Search product..." style="color: darkgrey;">
-            </div>
+                <input type="text" placeholder="Search product..."> </div>
             <div>
                 <img src="2_xe.png" alt="">
             </div>
@@ -101,7 +106,7 @@
     </div>
 
     <img src="4_anh.png" alt="">
-    <div class="content">
+    <div>
         <div class="text">
             <font face="Verdana" size="5" style="color: #323842; line-height: 10pt; ">
                 <h1>Gift for your skin</h1>
