@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <style>
     #menu-container {
         display: flex;
@@ -17,7 +18,6 @@
     #left {
         display: flex;
         width: 250px;
-        
         margin-top: -2px;
         justify-content: space-around;
         
@@ -25,19 +25,25 @@
     
     #right {
         display: flex;
-        width: 300px;
-        margin-top: 5px;
-        margin-right: -100px;
-        margin-left: 5px;
+        width: 350px;
+        margin-top: 3px;
+        margin-right: -83px;
+        margin-left: -40px;
         justify-content: space-around;
     }
     
     #center {
         margin-top: 8px;
-        margin-right: -60px;
-        margin-bottom: 5px;
+        margin-right: -70px;
+        margin-bottom: 3px;
     }
     
+    #product{
+        display: flex;
+        border-top: #323842;
+        justify-content: space-around;
+    }
+
     .leftitem {
         color: #686E77;
     }
@@ -48,39 +54,45 @@
     
     input {
         width: 162px; 
-        height: 31px;
-        border: 1px solid #E3E4E7;
-        border-radius: 5px;
+        height: 30px;
         padding-left: 35px;
-        font-size: 12;
         background-image: url(search_glass.png); 
         background-repeat: no-repeat; 
         background-position: 11px; 
         background-size: 17px 17px; 
     }
     
+    button{
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        color: #459D7A;
+        border: #E3E4E7;
+    }
     .text {
         color: black;
         position: absolute;
         top: 170px;
-        left: 150px;
+        left: 140px;
     }
     ::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #E3E4E7;
-    opacity: 1; /* Firefox */
-}
+        color: #E3E4E7;
+        opacity: 1; /* Firefox */
+    }
+
+
 </style>
 
 
 <body>
+    <!-- Menu -->
     <div id="menu-container">
         <div id="left">
-
             <div class="leftitem">
-                <font face="Verdana" size="2">Shop</font>
+                <font face="Verdana" size="2">Shop </font>
             </div>
-            <div class="leftitem">
-                <font face="Verdana" size="2">Offers</font>
+            <div class="leftitem"
+                <font face="Verdana" size="2">Offers </font>
             </div>
             <div class="leftitem">
                 <font face="Verdana" size="2">Our Story</font>
@@ -94,30 +106,52 @@
         </div>
         <div id="right">
             <div class="rightitem">
-                <input type="text" placeholder="Search product..."> </div>
+                <input type="text" style="border: 1px solid #E3E4E7; border-radius: 5px;"  placeholder="Search product..."> </div>
             <div>
                 <img src="2_xe.png" alt="">
             </div>
             <div class="rightitem">
                 <img src="3_user.png" alt="">
             </div>
-
         </div>
     </div>
 
     <img src="4_anh.png" alt="">
-    <div>
-        <div class="text">
-            <font face="Verdana" size="5" style="color: #323842; line-height: 10pt; ">
-                <h1>Gift for your skin</h1>
-            </font>
-            <font face="Verdana" size="4" style="color: #323842; ">
-                <p style="line-height: 10pt; ">Aliquip fugiat ipsum nostrud ex et eu incididunt</p>
-                <p style="line-height: 10pt;">quis minim dolore excepteur voluptate</p>
-            </font>
+    <div class="text">
+        <font face="Verdana" size="5" style="color: #323842; line-height: 10pt; ">
+            <h1>Gift for your skin</h1>
+        </font>
+        <font face="Verdana" size="4" style="color: #323842; ">
+            <p style="line-height: 10pt; ">Aliquip fugiat ipsum nostrud ex et eu incididunt</p>
+            <p style="line-height: 10pt;">quis minim dolore excepteur voluptate</p>
+        </font>
+    </div>
+
+    <div id="#product">
+        <div>
+            <button style="background-color: #459D7A; border: #E3E4E7; color: aliceblue; border-radius: 3px;">All Products </button>
+            <button style="background-color: #FAFAFB; ">Face </button> <u style="color: #459D7A;">|</u>
+            <button style="background-color: #FAFAFB;">Body</button>
         </div>
 
+        <input type="text" style="border-bottom: 1px solid #686E77; border-top: #E3E4E7; border-left: #E3E4E7; border-right: #E3E4E7;" placeholder="Search product...">
+
+        <button style="background-image: url(sort.PNG); 
+            width: 135px;
+            border: 1px solid #FAFAFB;
+            border-radius: 5px;
+            padding-right: 35px;
+            background-color: #F3F4F6;
+            background-repeat: no-repeat; 
+            background-position: 95px; 
+            background-size: 25px 25px; 
+            color: #686E77;">
+            
+        Sort by</button>
+        <div>
+
     </div>
+
 </body>
 
 </html>
