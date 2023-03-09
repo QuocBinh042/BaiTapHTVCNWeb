@@ -40,10 +40,27 @@
     
     #product{
         display: flex;
-        border-top: #323842;
-        justify-content: space-around;
+        width: 1170px;
+        height: 50px;
+        margin-left: 130px;
+        margin-top: 60px;
+        justify-content: space-between;
+        font-size: 1px;
     }
 
+    #left2{
+        display: flex;
+        width: 557px;
+        
+    }
+
+    #right2 {
+        display: flex;
+        width: 400px;
+        position: absolute;
+        margin-left: 750px;
+        justify-content: space-between;
+    }
     .leftitem {
         color: #686E77;
     }
@@ -53,8 +70,6 @@
     }
     
     input {
-        width: 162px; 
-        height: 30px;
         padding-left: 35px;
         background-image: url(search_glass.png); 
         background-repeat: no-repeat; 
@@ -106,7 +121,9 @@
         </div>
         <div id="right">
             <div class="rightitem">
-                <input type="text" style="border: 1px solid #E3E4E7; border-radius: 5px;"  placeholder="Search product..."> </div>
+                <input type="text" style="  width: 162px; 
+                height: 30px;
+                border: 1px solid #E3E4E7; border-radius: 5px;"  placeholder="Search product..."> </div>
             <div>
                 <img src="2_xe.png" alt="">
             </div>
@@ -127,29 +144,35 @@
         </font>
     </div>
 
-    <div id="#product">
-        <div>
-            <button style="background-color: #459D7A; border: #E3E4E7; color: aliceblue; border-radius: 3px;">All Products </button>
-            <button style="background-color: #FAFAFB; ">Face </button> <u style="color: #459D7A;">|</u>
-            <button style="background-color: #FAFAFB;">Body</button>
+    <div id="product">
+        <div id="left2">
+            <div>
+                <button style="background-color: #459D7A; border: #E3E4E7; color: aliceblue; border-radius: 3px;">All Products </button>
+                <button style="background-color: #FAFAFB; ">Face </button> <b style="color: #459D7A;">|</b>
+                <button style="background-color: #FAFAFB;">Body</button>
+            </div>
         </div>
-
-        <input type="text" style="border-bottom: 1px solid #686E77; border-top: #E3E4E7; border-left: #E3E4E7; border-right: #E3E4E7;" placeholder="Search product...">
-
-        <button style="background-image: url(sort.PNG); 
-            width: 135px;
-            border: 1px solid #FAFAFB;
-            border-radius: 5px;
-            padding-right: 35px;
-            background-color: #F3F4F6;
-            background-repeat: no-repeat; 
-            background-position: 95px; 
-            background-size: 25px 25px; 
-            color: #686E77;">
-            
-        Sort by</button>
+        
+        <div id="right2">
+            <div style="margin-top: 10px;">
+                <input type="text" style="width: 200px; 
+                height: 35px;
+                font-size: 50; border-bottom: 1px solid #686E77; border-top: #E3E4E7; border-left: #E3E4E7; border-right: #E3E4E7;" placeholder="Search product...">
+            </div>
+           
+            <button style="background-image: url(sort.PNG); 
+                width: 135px;
+                border: 1px solid #FAFAFB;
+                border-radius: 5px;
+                padding-right: 35px;
+                background-color: #F3F4F6;
+                background-repeat: no-repeat; 
+                background-position: 95px; 
+                background-size: 25px 25px; 
+                color: #686E77;">
+               Sort by</button>
+        </div>
         <div>
-
     </div>
 
 </body>
