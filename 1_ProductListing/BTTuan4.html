@@ -28,10 +28,14 @@
         width: 350px;
         margin-top: 3px;
         margin-right: -83px;
-        margin-left: -40px;
+        margin-left: -65px;
         justify-content: space-around;
     }
     
+    #right ::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #E3E4E7;
+        opacity: 1; /* Firefox */
+    }
     #center {
         margin-top: 8px;
         margin-right: -70px;
@@ -42,7 +46,7 @@
         display: flex;
         width: 1170px;
         height: 50px;
-        margin-left: 130px;
+        margin-left: 133px;
         margin-top: 60px;
         justify-content: space-between;
         font-size: 1px;
@@ -50,8 +54,8 @@
 
     #left2{
         display: flex;
-        width: 557px;
-        
+        width: 580px;
+        justify-content: space-between;
     }
 
     #right2 {
@@ -79,8 +83,8 @@
     
     button{
         width: 180px;
-        height: 50px;
-        font-size: 20px;
+        height: 52px;
+        font-size: 19px;
         color: #459D7A;
         border: #E3E4E7;
     }
@@ -90,12 +94,22 @@
         top: 170px;
         left: 140px;
     }
-    ::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+
+    #right2 ::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
         color: #E3E4E7;
         opacity: 1; /* Firefox */
+        font-size: 18px;
     }
 
+    #product-container{
+        display: flex;
+        margin-top: 100px;
+        position: absolute;
+        color: black;
+        font-size: 20px;
+    }
 
+   
 </style>
 
 
@@ -117,7 +131,7 @@
             </div>
         </div>
         <div id="center">
-            <img src="1_logo.png" alt="">
+            <img src="1_logo.png" alt="logo">
         </div>
         <div id="right">
             <div class="rightitem">
@@ -147,9 +161,9 @@
     <div id="product">
         <div id="left2">
             <div>
-                <button style="background-color: #459D7A; border: #E3E4E7; color: aliceblue; border-radius: 3px;">All Products </button>
-                <button style="background-color: #FAFAFB; ">Face </button> <b style="color: #459D7A;">|</b>
-                <button style="background-color: #FAFAFB;">Body</button>
+                <button style="background-color: #459D7A; color: aliceblue; border-radius: 3px;">All Products</button> 
+                <button style="background-color: #FFFFFF; border-right:1px solid #459D7A;">Face </button>
+                <button style="background-color: #FFFFFF">Body</button>
             </div>
         </div>
         
@@ -157,7 +171,7 @@
             <div style="margin-top: 10px;">
                 <input type="text" style="width: 200px; 
                 height: 35px;
-                font-size: 50; border-bottom: 1px solid #686E77; border-top: #E3E4E7; border-left: #E3E4E7; border-right: #E3E4E7;" placeholder="Search product...">
+                border-bottom: 1px solid #EFF0F1; border-top: #E3E4E7; border-left: #E3E4E7; border-right: #E3E4E7;" placeholder="Search product...">
             </div>
            
             <button style="background-image: url(sort.PNG); 
@@ -174,6 +188,161 @@
         </div>
         <div>
     </div>
+
+    <div id="product-container">
+        <table>
+            <tr style="width: 1200px; height: 460px; display: flex; justify-content: space-between;">
+                <td style=" width: 1200px; height: 460px;">
+                    <!-- <button>Best seller</button> -->
+                    <img src="Image 1 (1).png " alt="" style="width: 262px; height: 333px">
+                    
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                        <b style="font-size: 36px;">$32</b> 
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$42</b> 
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (2).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$22</b> 
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$28</b> 
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (3).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$18</b> 
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$26</b> 
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (4).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt=""style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$48</b> 
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$56</b> 
+                    </font>
+                </td>
+            </tr>
+            <tr style="width: 1200px; height: 460px; display: flex; justify-content: space-between;">
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (5).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$31</b>  
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (6).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                        <b style="font-size: 36px;">$40</b> 
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$48</b> 
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (7).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$26</b> 
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (8).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$18</b> 
+                    </font>
+                </td>
+            </tr>
+            <tr style="width: 1200px; height: 460px; display: flex; justify-content: space-between;">
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (9).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                        <b style="font-size: 36px;">$52</b>
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (10).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$47</b>
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$42</b> 
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (11).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$44</b> 
+                    </font>
+                </td>
+                <td style=" width: 1200px; height: 460px;">
+                    <img src="Image 1 (12).png " alt="" style="width: 262px; height: 333px">
+                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                        <b>Product title</b>
+                        <br>
+                        Labore sint ipsum dolore mollit
+                        <br><br>
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <b style="font-size: 36px;">$32</b> 
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$42</b> 
+                    </font>
+                </td>
+            </tr>
+    </table>
+
+    
+    </div>
+    
 
 </body>
 
