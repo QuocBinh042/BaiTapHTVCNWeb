@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>List products</title>
 </head>
 
 <style>
@@ -38,7 +38,7 @@
     }
     #center {
         margin-top: 8px;
-        margin-right: -70px;
+        margin-right: -60px;
         margin-bottom: 3px;
     }
     
@@ -64,6 +64,7 @@
         position: absolute;
         margin-left: 750px;
         justify-content: space-between;
+        right: 35px;
     }
     .leftitem {
         color: #686E77;
@@ -73,18 +74,11 @@
         color: rgba(0, 0, 0, 0.5);
     }
     
-    input {
-        padding-left: 35px;
-        background-image: url(search_glass.png); 
-        background-repeat: no-repeat; 
-        background-position: 11px; 
-        background-size: 17px 17px; 
-    }
     
     button{
         width: 180px;
         height: 52px;
-        font-size: 19px;
+        font-size: 18.5px;
         color: #459D7A;
         border: #E3E4E7;
     }
@@ -109,7 +103,12 @@
         font-size: 20px;
     }
 
-   
+   #product-container::text{
+        color: black;
+        position: absolute;
+        top: 170px;
+        left: 140px;
+   }
 </style>
 
 
@@ -135,8 +134,9 @@
         </div>
         <div id="right">
             <div class="rightitem">
-                <input type="text" style="  width: 162px; 
-                height: 30px;
+                <input type="text" 
+                style="  width: 162px;  height: 30px;
+                padding-left: 35px; background-image: url(search_glass.png); background-repeat: no-repeat; background-position: 11px; background-size: 17px 17px; 
                 border: 1px solid #E3E4E7; border-radius: 5px;"  placeholder="Search product..."> </div>
             <div>
                 <img src="2_xe.png" alt="">
@@ -152,9 +152,9 @@
         <font face="Verdana" size="5" style="color: #323842; line-height: 10pt; ">
             <h1>Gift for your skin</h1>
         </font>
-        <font face="Verdana" size="4" style="color: #323842; ">
-            <p style="line-height: 10pt; ">Aliquip fugiat ipsum nostrud ex et eu incididunt</p>
-            <p style="line-height: 10pt;">quis minim dolore excepteur voluptate</p>
+        <font face="Verdana" style="color: #5F6063; top: 170px; left: 140px; ">
+            <p style="line-height: 10pt; font-size: 19.2px;">Aliquip fugiat ipsum nostrud ex et eu incididunt</p>
+            <p style="line-height: 10pt; font-size: 19.2px;">quis minim dolore excepteur voluptate</p>
         </font>
     </div>
 
@@ -170,8 +170,10 @@
         <div id="right2">
             <div style="margin-top: 10px;">
                 <input type="text" style="width: 200px; 
-                height: 35px;
-                border-bottom: 1px solid #EFF0F1; border-top: #E3E4E7; border-left: #E3E4E7; border-right: #E3E4E7;" placeholder="Search product...">
+                height: 40px;
+                font-size: 20px;
+                padding-left: 40px; background-image: url(search_glass.png); background-repeat: no-repeat; background-position: 11px; background-size: 25px 25px; 
+                border-bottom: 1px solid #E9D9CB; border-top: #E3E4E7; border-left: #E3E4E7; border-right: #E3E4E7;" placeholder="Search product...">
             </div>
            
             <button style="background-image: url(sort.PNG); 
@@ -191,12 +193,17 @@
 
     <div id="product-container">
         <table>
-            <tr style="width: 1200px; height: 460px; display: flex; justify-content: space-between;">
-                <td style=" width: 1200px; height: 460px;">
-                    <!-- <button>Best seller</button> -->
+            <tr style="width: 1200px; height: 500px; display: flex; justify-content: space-between;">
+                <td style=" width: 1200px; height: 46=0px;">
+                    <div>
+                        <button style="width: 78px; height: 26px; border-radius: 20px; position: absolute; margin-left: 170px; margin-top: 15px;
+                                color: #323842; background-color: #FFC970;
+                                font-size: 12px;" >Best-seller</button>
+                    </div>
+                   
                     <img src="Image 1 (1).png " alt="" style="width: 262px; height: 333px">
                     
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
@@ -207,57 +214,77 @@
                     </font>
                 </td>
                 <td style=" width: 1200px; height: 460px;">
+                    <div>
+                        <button style="width: 78px; height: 26px; border-radius: 20px; position: absolute; margin-left: 170px; margin-top: 15px;
+                                color: #323842; background-color: #FFC970;
+                                font-size: 12px;" >Best-seller</button>
+                    </div>
                     <img src="Image 1 (2).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
                         <br><br>
-                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
                         <b style="font-size: 36px;">$22</b> 
                         <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$28</b> 
                     </font>
                 </td>
                 <td style=" width: 1200px; height: 460px;">
+                    <div>
+                        <button style="width: 78px; height: 26px; border-radius: 20px; position: absolute; margin-left: 170px; margin-top: 15px;
+                                color: #323842; background-color: #FFC970;
+                                font-size: 12px;" >Best-seller</button>
+                    </div>
                     <img src="Image 1 (3).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
                         <br><br>
-                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
                         <b style="font-size: 36px;">$18</b> 
                         <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$26</b> 
                     </font>
                 </td>
                 <td style=" width: 1200px; height: 460px;">
+                    <div>
+                        <button style="width: 78px; height: 26px; border-radius: 20px; position: absolute; margin-left: 170px; margin-top: 15px;
+                                color: #323842; background-color: #FFC970;
+                                font-size: 12px;" >Best-seller</button>
+                    </div>
                     <img src="Image 1 (4).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
                         <br><br>
-                        <img src="Button 1 (2).png" alt=""style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <img src="Button 1 (2).png" alt=""style="float: right; margin-top: -10px; margin-right: 33px;">
                         <b style="font-size: 36px;">$48</b> 
                         <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$56</b> 
                     </font>
                 </td>
             </tr>
-            <tr style="width: 1200px; height: 460px; display: flex; justify-content: space-between;">
+            <tr style="width: 1200px; height:500px; display: flex; justify-content: space-between;">
                 <td style=" width: 1200px; height: 460px;">
                     <img src="Image 1 (5).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
                         <br><br>
-                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
                         <b style="font-size: 36px;">$31</b>  
                     </font>
                 </td>
                 <td style=" width: 1200px; height: 460px;">
+                    <div>
+                        <button style="width: 40px; height: 26px; border-radius: 18px; position: absolute; margin-left: 170px; margin-top: 15px;
+                                color: #323842; background-color: #FFC970;
+                                font-size: 12px;" >New</button>
+                    </div>
                     <img src="Image 1 (6).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
@@ -269,18 +296,18 @@
                 </td>
                 <td style=" width: 1200px; height: 460px;">
                     <img src="Image 1 (7).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
                         <br><br>
-                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
                         <b style="font-size: 36px;">$26</b> 
                     </font>
                 </td>
                 <td style=" width: 1200px; height: 460px;">
                     <img src="Image 1 (8).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
@@ -290,10 +317,15 @@
                     </font>
                 </td>
             </tr>
-            <tr style="width: 1200px; height: 460px; display: flex; justify-content: space-between;">
+            <tr style="width: 1200px; height: 500px; display: flex; justify-content: space-between;">
                 <td style=" width: 1200px; height: 460px;">
+                    <div>
+                        <button style="width: 40px; height: 26px; border-radius: 18px; position: absolute; margin-left: 170px; margin-top: 15px;
+                                color: #323842; background-color: #FFC970;
+                                font-size: 12px;" >New</button>
+                    </div>
                     <img src="Image 1 (9).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
@@ -304,19 +336,19 @@
                 </td>
                 <td style=" width: 1200px; height: 460px;">
                     <img src="Image 1 (10).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
                         <br><br>
-                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
                         <b style="font-size: 36px;">$47</b>
                         <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$42</b> 
                     </font>
                 </td>
                 <td style=" width: 1200px; height: 460px;">
                     <img src="Image 1 (11).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
@@ -326,15 +358,20 @@
                     </font>
                 </td>
                 <td style=" width: 1200px; height: 460px;">
+                    <div>
+                        <button style="width: 40px; height: 26px; border-radius: 18px; position: absolute; margin-left: 170px; margin-top: 15px;
+                                color: #323842; background-color: #FFC970;
+                                font-size: 12px;" >New</button>
+                    </div>
                     <img src="Image 1 (12).png " alt="" style="width: 262px; height: 333px">
-                    <font face="Helvetica" size="3px" style="color: #323842; line-height: 10pt; ">
+                    <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                         <b>Product title</b>
                         <br>
                         Labore sint ipsum dolore mollit
                         <br><br>
-                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;"">
+                        <img src="Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
                         <b style="font-size: 36px;">$32</b> 
-                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$42</b> 
+                        <b style="font-size: 18px; vertical-align: top; color: #D4D6DA; ">$42</b> 
                     </font>
                 </td>
             </tr>
