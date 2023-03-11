@@ -134,16 +134,37 @@
 
    #left-about-us{
         display: flex;
-        width: 600px;
-        justify-content: space-between;
+        
    }
 
-   
    #right-about-us{
         display: flex;
-        width: 580px;
-        justify-content: space-between;
+        position: absolute;
+        width: 440px;
+        height: 280px; margin-top: 100px; margin-left: 880px;
    }
+
+   #right-about-us ::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #E3E4E7;
+        opacity: 0.6; /* Firefox */
+        font-size: 18px; 
+    }
+
+    #input2{
+        background-color:#459D7A;
+        color: aliceblue;
+        border-top-right-radius:8px; border-bottom-right-radius:8px; 
+        width: 126px; height: 50px;
+        color: #D4D6DA; border-left: 1.5 solid #1E2229; border: 1.5px solid #459D7A
+    }
+
+    #img-bottom-right{
+        display: flex;
+        width: 124px;
+        justify-content: space-between;
+        position: absolute;
+        margin-top: 30px
+    }
 </style>
 
 
@@ -425,72 +446,98 @@
     <div id="about-us">
         <div id="left-about-us">
         <table style="width: 600x; height: 280px; margin-top: 80px; margin-left: 130px;">
-            <tr style="width: 600px; height: 30px; border: 5px solid #F3F4F6;">
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7; ">
-                    <font face="Arial" size="4px" style="color: #E3E4E7; line-height: 10pt; "><b>About</b></font>    
+            <tr style="width: 600px; height: 20px;">
+                <td style="width: 175px;">
+                    <font face="Arial Black" size="4px" style="color: #E3E4E7;"><b>About</b></font>    
                 </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="4px" style="color: #E3E4E7; line-height: 10pt; "><b>Help</b></font>    
+                <td style="width: 175px;">
+                    <font face="Arial Black" size="4px" style="color: #E3E4E7;"><b>Help</b></font>    
                 </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="4px" style="color: #E3E4E7; line-height: 10pt; "><b>Contact</b></font>    
-                </td>
-            </tr>
-            <tr style="width: 600px; height: 30px; border: 5px solid #F3F4F6;">
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Home</font>    
-                </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Shipping & Returns</font>    
-                </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Phone:</font>    
+                <td style="width: 175px;">
+                    <font face="Arial Black" size="4px" style="color: #E3E4E7;"><b>Contact</b></font>    
                 </td>
             </tr>
-            <tr style="width: 600px; height: 35px; border: 5px solid #F3F4F6;">
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Shop</font>    
+            <tr style="width: 600px; height:5px; ">
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7; ">Home</font>    
                 </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Track Order</font>    
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7; ">Shipping & Returns</font>    
                 </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">(+1)123 356 7893</font>    
-                </td>
-            </tr>
-            <tr style="width: 600px; height: 35px; border: 5px solid #F3F4F6;">
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Our story</font>    
-                </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">FAQs</font>    
-                </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Email:</font>    
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7; ">Phone:</font>    
                 </td>
             </tr>
-            <tr style="width: 600px; height: 35px; border: 5px solid #F3F4F6;">
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">Blogs</font>    
+            <tr style="width: 600px; height: 5px; ">
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7;  ">Shop</font>    
                 </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; "></font>    
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7;">Track Order</font>    
                 </td>
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <font face="Arial" size="2px" style="color: #E3E4E7; line-height: 10pt; ">name@email.com</font>    
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7;"><b>(+1)123 356 7893</b> </font>    
                 </td>
             </tr>
-            <tr style="width: 600px; height: 35px; border: 5px solid #F3F4F6;">
-                <td style="width: 184px;  font-size: 20px; color: #E3E4E7;">
-                    <select name="month" id="month" style="width: 130px; height: 35px; border-radius: 5px; background-color: #1E2229; color: #D4D6DA; border: solid 1.5px;">
-                        <option value="January">English</option>
+            <tr style="width: 600px; height: 5px; ">
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7;">Our story</font>    
+                </td>
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7;">FAQs</font>    
+                </td>
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7;">Email:</font>    
+                </td>
+            </tr>
+            <tr style="width: 600px; height:5px; ">
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7;">Blogs</font>    
+                </td>
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7; "></font>    
+                </td>
+                <td style="width: 175px;">
+                    <font face="Arial" size="2px" style="color: #E3E4E7; "><b>name@email.com</b></font>    
+                </td>
+            </tr>
+            <tr style="width: 600px; height: 5px;">
+                <td style="width: 175px;">
+                    <select name="month" id="month" style="width: 120px; height: 35px; border-radius: 5px; background-color: #1E2229; color: #D4D6DA; border: solid 1.5px;">
+                        <option value="January" ><b>English</b> </option>
                     </section>
                 </td>
                 
             </tr>
         </table>
     </div>
+    <div id="right-about-us">
+        <div>
+            <font face="Arial" size="5px" style="color: #E3E4E7; "><b>Receive new promotions </b></font>   
+            <br>
+            <font face="Arial" size="3px" style="color: #E3E4E7; line-height: 50px;">Duis ea tempor commodo amet reprehende</font> 
+            <input type="text" name="" id="" placeholder="Input your email" 
+            style="padding-left: 50px; background-image: url(Mail.PNG); background-repeat: no-repeat; background-position: 15px; background-size: 26px 26px; 
+            border-top-left-radius: 8px; border-bottom-left-radius: 8px; 
+            width: 250px; height: 50px;  background-color: #1E2229; color: #D4D6DA; border: solid 1.5px;">
+            <input type="text" name="" id="input2" placeholder="Subscribe" 
+            style="text-align: center;">
+            <div id="img-bottom-right">
+                <img src="Twitter 1.png" alt="Twitter-icon" style="width: 25px;height: 25px">
+                <img src="Facebook 1.png" alt="Facebook-icon" style="width: 25px;height: 25px">
+                <img src="LinkedIn 1.png" alt="LinkedIn-icon" style="width: 25px;height: 25px">
+                <img src="YouTube 1.png" alt="YouTube-icon" style="width: 25px;height: 25px">     
+            </div>
+            <div style="position: absolute; margin-top: 75px;">
+                <font face="Arial" size="3px" style="color: #E3E4E7; line-height: 50px;">© 2022 Brand, Inc. &#8226  Privacy &#8226  Terms &#8226  Sitemap</font>
+            </div>
+        </div>
+
     </div>
+    </div>
+
+    
+
 </body>
 
 </html>
