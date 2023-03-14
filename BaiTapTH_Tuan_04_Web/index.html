@@ -21,7 +21,41 @@
         #center {
             width: 910px;
             margin-left: 25px;
-            background-color: bisque;
+            margin-top: 20px;
+            /* background-color: bisque; */
+        }
+        
+        #center_above {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #center_img {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        #center_button {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            width: 485px;
+            height: 45px;
+            margin-top: 30px;
+            margin-left: 160px;
+        }
+        
+        #center_img2 {
+            display: flex;
+            /* justify-content: flex-start; */
+            justify-content: space-around;
+            margin-right: 55px;
+            margin-top: 30px;
+        }
+        
+        #img2_center {
+            border-radius: 10px;
         }
         
         #right {
@@ -82,7 +116,61 @@
                     <img id="setting" src="../img/setting.png" width="44" alt="">
                 </div>
             </div>
-            <div id="center">center</div>
+            <div id="center">
+                <div id="center_above">
+                    <h2>Meeting tile</h2>
+                    <button style="width: 80px; height: 35px; border-radius: 20px; border: 2px solid red; background-color: white;
+                    font-size: 15px; color: red; display: flex; justify-content: center; padding-right: 25px; align-items: center; margin-right: 20px;"> 
+                    <ul> <li>12:00</li></ul>               
+                 </button>
+                </div>
+
+                <button style="border-radius: 25px; border: #E34D73; width: 82px; height: 28px; 
+                    background-color: #E34D73; color: azure;
+                    background-image: url(../img/user.png); background-repeat: no-repeat; background-size: 20px; font-size: 12px;">Internal</button>
+
+                <button style="width: 120px; height: 30px; border: white; background-color: white;
+                    background-image: url(../img/calender.png); background-repeat: no-repeat; background-size: 20px; padding-left: 20px;"> 
+                    Sep 02, 2022   
+                </button><b style="color: gray;">|</b>
+                <button style="width: 120px; height: 30px; border: white; background-color: white;">    08:00 - 09:00 AM
+                </button>
+
+                <div id="center_img">
+                    <img src="../img/img_big.png" alt="">
+                    <img src="../img/mic_color.png" alt="" style="display: flex; position: absolute;">
+                </div>
+
+                <div id="center_img2">
+                    <div>
+                        <img src="../img/mic_grey_color.png" alt="" style="display: flex; position: absolute; width: 28px; height: 28px;">
+                        <img src="../img/img2.png" alt="" id="img2_center">
+
+                    </div>
+                    <div>
+                        <img src="../img/mic_grey_color.png" alt="" style="display: flex; position: absolute; width: 28px; height: 28px;">
+                        <img src="../img/img1.png" alt="" id="img2_center">
+                    </div>
+                    <div>
+                        <img src="../img/mic_grey_color.png" alt="" style="display: flex; position: absolute; width: 28px; height: 28px;">
+                        <img src="../img/img.png" alt="" id="img2_center">
+                    </div>
+
+                </div>
+
+                <div id="center_button">
+                    <img src="../img/mic_grey_color.png" alt="">
+                    <img src="../img/cam_color.png" alt="">
+                    <img src="../img/speaker_grey_color.png" alt="">
+                    <button style="background-color: red; color: aliceblue; font-size: 15px; border: red;">End meeting</button>
+                    <img src="../img/Button 2179.png" alt="">
+                    <img src="../img/share.png" alt="">
+                    <img src="../img/cham.png" alt="">
+                </div>
+
+
+            </div>
+
             <div id="right">right</div>
 
         </div>
