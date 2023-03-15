@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meeting</title>
     <style>
         #wrapper {
             display: flex;
@@ -20,7 +20,7 @@
         
         #center {
             width: 910px;
-            margin-left: 25px;
+            margin-left: 33px;
             margin-top: 20px;
             /* background-color: bisque; */
         }
@@ -33,7 +33,7 @@
         #center_img {
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
+            margin-top: 70px;
         }
         
         #center_button {
@@ -48,12 +48,67 @@
         
         #center_img2 {
             display: flex;
-            /* justify-content: flex-start; */
             justify-content: space-around;
             margin-right: 55px;
             margin-top: 30px;
         }
         
+        #center_button-user{
+            width: 80px; height: 28px; 
+            border-radius: 25px; border: #E34D73; 
+            color: azure; font-size: 12px;
+            background-color: #E34D73; 
+            display: flex; position: absolute; justify-content: center; 
+            padding-left: 25px; align-items: center;            
+        }
+
+        #center_img-user{
+            display: flex; position: absolute; justify-content: center; 
+            width: 10px; height: 10px; 
+            margin-top: 9px;
+            margin-left: 11px;
+        }
+        #center_button-date{
+            width: 120px; height: 30px;
+            border: white; background-color: white;
+            display: flex; position: absolute; justify-content: center; margin-left: 90px;
+            background-image: url(../img/calender.png); 
+            background-repeat: no-repeat; background-size: 15px; background-position: 10px;
+            padding-left: 31px;   
+            padding-top: 7px; 
+            
+        }
+
+        #center_button-time{
+            width: 120px; height: 30px; 
+            display: flex; position: absolute; justify-content: center; 
+            margin-left: 235px;
+            padding-top: 8px;
+            border: white; background-color: white;
+        }
+
+        #center_time{
+            width: 92px; height: 38px; 
+            border-radius: 20px; border: 1px solid red; 
+            background-color: white;
+            font-size: 14px; color: red; 
+            display: flex; justify-content: center;
+            padding-right: 10px; align-items: center;
+            margin-right: 60px; 
+            margin-top: 13px;
+        }
+        
+        #center_img_name{
+            width: 160px; height: 38px; 
+            border-radius: 3px; border: 1px solid #757679;
+            background-color: #757679;
+            font-size: 14px; color: white;
+            display: flex; position: absolute; justify-content: center;
+            padding-right: 10px; align-items: center;
+            margin-left: 20px;
+            margin-top: 12px;
+        }
+
         #img2_center {
             border-radius: 10px;
         }
@@ -69,6 +124,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border-right: 1px solid rgb(216, 211, 211);
         }
         
         #left_above {
@@ -110,7 +166,6 @@
                     <img class="item" src="../img/cam_color.png" alt="" style="margin-top: 37px; width: 57px; height: 57px;">
                     <img class="item" src="../img/user.png" alt="" style="margin-top: 30px;">
                 </div>
-
                 <div id="below">
                     <img src="../img/avatar.png" width="44" alt="">
                     <img id="setting" src="../img/setting.png" width="44" alt="">
@@ -118,27 +173,26 @@
             </div>
             <div id="center">
                 <div id="center_above">
-                    <h2>Meeting tile</h2>
-                    <button style="width: 80px; height: 35px; border-radius: 20px; border: 2px solid red; background-color: white;
-                    font-size: 15px; color: red; display: flex; justify-content: center; padding-right: 25px; align-items: center; margin-right: 20px;"> 
-                    <ul> <li>12:00</li></ul>               
-                 </button>
+                    <h2><font face="arial" size="5px">Meeting title</font> </h2>
+                    <button id="center_time"><span style="font-size: 40px; padding-right: 10px;">&#8226</span>12:00</button>
                 </div>
-
-                <button style="border-radius: 25px; border: #E34D73; width: 82px; height: 28px; 
-                    background-color: #E34D73; color: azure;
-                    background-image: url(../img/user.png); background-repeat: no-repeat; background-size: 20px; font-size: 12px;">Internal</button>
-
-                <button style="width: 120px; height: 30px; border: white; background-color: white;
-                    background-image: url(../img/calender.png); background-repeat: no-repeat; background-size: 20px; padding-left: 20px;"> 
-                    Sep 02, 2022   
-                </button><b style="color: gray;">|</b>
-                <button style="width: 120px; height: 30px; border: white; background-color: white;">    08:00 - 09:00 AM
-                </button>
-
+                <div style="margin-top: 3px;">
+                    <button id="center_button-user"> Internal
+                        
+                        <span > 
+                            <button style="border-radius: 100%; width: 15px; height: 15px; border: 2px solid rgb(252, 233, 233); display: flex; position: absolute; margin-top: 6px;
+                            margin-left: 9px;"></button>
+                            <img src="../img/user.png" alt="" id="center_img-user"> 
+                        </span>
+                    
+                    </button>
+                    <button id="center_button-date">Sep 02, 2022</button><b style="color: gray; display: flex; position: absolute; margin-left: 215px; margin-top: 4px;">|</b>
+                    <button id="center_button-time">08:00 - 09:00 AM</button>
+                </div>
                 <div id="center_img">
                     <img src="../img/img_big.png" alt="">
-                    <img src="../img/mic_color.png" alt="" style="display: flex; position: absolute;">
+                    <img src="../img/mic_color.png" alt="" style="display: flex; position: absolute; margin-left: 770px; margin-top: 13px;">
+                    <button id="center_img_name"><span style="font-size: 30px; padding-right: 4px; color: rgb(43, 211, 43); margin-right: 5px;">&#8226</span>Benjamin Crawford</button>
                 </div>
 
                 <div id="center_img2">
