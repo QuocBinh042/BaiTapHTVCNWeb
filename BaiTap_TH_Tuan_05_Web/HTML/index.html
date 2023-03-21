@@ -21,7 +21,6 @@
         #center {
             width: 1162px;
             height: 2270px;
-            background-color: blueviolet;
         }
         
         #right {
@@ -34,6 +33,39 @@
             margin-left: 5px;
             justify-content: space-between;
         }
+        
+        #c_header {
+            display: flex;
+            height: 62px;
+        }
+        
+        #h_left {
+            width: 452px;
+            height: 60px;
+            margin-left: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #h_button {
+            height: 60px;
+            border: white;
+        }
+        
+        #h_right {
+            width: 340px;
+            height: 20px;
+            text-align: center;
+            margin-left: 280px;
+            margin-top: 20px;
+        }
+        
+        #h_right_placeholder {
+            padding-left: 30px;
+            opacity: 50%;
+            font-size: 15px;
+            border: white;
+        }
     </style>
 </head>
 
@@ -43,7 +75,18 @@
             <img src="../img/Image 1713.png" alt="" style="width: 95px; height: 30px; margin-top: 15px; margin-left: 20px;">
         </div>
         <div id="center">
-            i
+            <div id="c_header">
+                <div id="h_left">
+                    <button id="h_button" style="color: #00BDD6;  border-bottom:2px solid #00BDD6;"><b>Home</b></button>
+                    <button id="h_button">Promotions</button>
+                    <button id="h_button">Best-sellers</button>
+                    <button id="h_button">New releases</button>
+                    <button id="h_button">Support</button>
+                </div>
+                <div id="h_right">
+                    <input type="text" placeholder="Search..." style="background-image: url(../img/KinhLup.PNG); background-repeat: no-repeat;" id="h_right_placeholder">
+                </div>
+            </div>
         </div>
         <div id="right">
             <img src="../img/Bell 1.png" alt="" id="right_icon">
