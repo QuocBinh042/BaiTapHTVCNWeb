@@ -40,7 +40,7 @@
         }
         
         #h_left {
-            width: 452px;
+            width: 460px;
             height: 60px;
             margin-left: 25px;
             display: flex;
@@ -50,6 +50,8 @@
         #h_button {
             height: 60px;
             border: white;
+            background-color: white;
+            
         }
         
         #h_right {
@@ -78,13 +80,51 @@
         
         #c_content {
             width: 1162px;
-            height: 360px;
+            height: 380px;
             display: flex;
-            border: 2px solid black;
+            
         }
         
         #content_left {
             width: 773px;
+        }
+
+        #content_right{
+            width: 360px;
+            margin-left: 100px;
+        }
+
+        #content_select{
+            width: 300px;
+            height: 35px;
+            margin-left: 20px;
+            border: rgb(245, 238, 238);
+            background-color: rgb(245, 238, 238);
+        }
+
+        #content_button{
+            width: 300px;
+            height: 35px;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        #img-Shoppingcart{
+            filter: saturate(50000%);
+            display: flex;
+            position: absolute;
+            margin-top: 22px;
+            width: 20px;
+            margin-left: 110px;
+        }
+
+        #c_review{
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        #title-review{
+            height: 35px;
             border: 2px solid black;
         }
     </style>
@@ -98,7 +138,7 @@
         <div id="center">
             <div id="c_header">
                 <div id="h_left">
-                    <button id="h_button" style="color: #00BDD6;  border-bottom:2px solid #00BDD6;"><b>Home</b></button>
+                    <button id="h_button" style="color: #00BDD6;  border-bottom:4px solid #00BDD6;"><b>Home</b></button>
                     <button id="h_button">Promotions</button>
                     <button id="h_button">Best-sellers</button>
                     <button id="h_button">New releases</button>
@@ -115,7 +155,7 @@
                     <div id="product_title_right" style=" margin-top: -15px;">
                         <img src="../img/Rating 317.png" alt="">
                         <span><b>4.20</b> <span style="opacity: 70%;">(99 reviews) </span> </span>
-                        <span style="">
+                        <span>
                             <img src="../img/Share.PNG" alt="" style="vertical-align: middle;; width: 15px; margin-left: 780px;"> Share
                             <img src="../img/Heart 23.png" alt="" style="vertical-align: text-bottom; width: 20px; margin-left: 30px; "> Save
                         </span>
@@ -152,7 +192,7 @@
                     <br>
                     <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus distinctio quos recusandae. Quas quod nemo aut fugit voluptatibus tempora officia voluptas saepe rerum quos accusantium quis accusamus ullam voluptatum natus ex, amet, corrupti dicta. Cum, reiciendis magnam culpa error excepturi pariatur laboriosam delectus minus porro facere et neque itaque veritatis?</span>
                     <div>
-                        <table border="2px" style="width: 50%; height: 100px; margin-top: 40px;">
+                        <table style="width: 50%; height: 100px; margin-top: 40px; text-align: left;">
                             <tr>
                                 <th>
                                     <img src="../img/Truck 1.png" alt="" style="vertical-align: middle;"> Free delivery
@@ -172,7 +212,6 @@
                             <tr>
                                 <th>
                                     <img src="../img/Chat dots 1.png" alt="" style="vertical-align: middle;"> 100% authentic
-
                                 </th>
                                 <th>
                                     <img src="../img/Checks 1.png" alt="" style="vertical-align: middle;"> 24/7 customer support
@@ -182,6 +221,35 @@
                     </div>
                 </div>
 
+                <div id="content_right" >
+                    <h1 style="color: #00BDD6; text-align: right; margin-right: 20px;"> $99</h1>
+                    <select name="" id="content_select">
+                        <option value="">Color</option>
+                    </select>
+                    <select name="" id="content_select" style="margin-top: 15px;">
+                        <option value="">Size</option>
+                    </select>
+                    <select name="" id="content_select" style="margin-top: 15px;">
+                        <option value="">3</option>
+                    </select>
+                    <div style="margin-top: 15px;  margin-left: 20px;">
+                        <span style="opacity: 50%; ">Total</span>
+                        <span><b style="margin-left: 230px;">$265</b> </span>
+                    </div>
+                    <button id="content_button" style="color: white; background-color: #00BDD6; border: #00BDD6; border-radius: 3px; font-size: 15px;">Buy now</button>
+                    <img src="../img/Shopping cart simple 1.png" alt="" id="img-Shoppingcart" >
+                    <button id="content_button" style="color: #00BDD6; background-color: white; border: 1px solid #00BDD6;  border-radius: 3px; font-size: 15px;">Add to cart</button>
+                </div>
+
+                
+            </div>
+            <div id="c_review">
+                <div id="title-review">
+                    <b style="font-size: 25px;">Reviews</b>
+                        <img src="../img/Rating 304.png" alt="" style="vertical-align: text-bottom;">
+                        <b>4.20</b> <span style="opacity: 70%;">(99 reviews) </span>
+                </div>
+                
             </div>
         </div>
 
