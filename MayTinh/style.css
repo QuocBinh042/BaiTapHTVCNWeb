@@ -1,0 +1,43 @@
+#container {
+    width: 400px;
+    height: 520px;
+    background-color: #92B9E5
+}
+
+#title {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+}
+
+#content {
+    position: absolute;
+    margin-top: 100px;
+    width: 390px;
+    height: 150px;
+}
+
+#content1 {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+}
+
+#content2 {
+    position: absolute;
+    margin-top: 90px;
+    width: 100%;
+    height: 70px;
+}
+
+#table {
+    position: absolute;
+    margin-top: 270px;
+    width: 395px;
+    height: 350px;
+}
+
+#button {
+    width: 100%;
+    height: 100%;
+}
