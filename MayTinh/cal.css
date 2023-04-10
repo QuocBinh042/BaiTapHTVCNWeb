@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#container {
+    width: 350px;
+    height: 500px;
+    background-color: #92B9E5;
+    border-radius: 10px;
+}
+
+button{
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    float:left;
+    border-radius: 20%;
+    border-width: 0;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.xu_li{
+    background-color: rgb(247, 142, 68);
+}
+
+#ket_qua{
+    height: 120px;
+}
+
+#ket_qua_cu{
+    text-align: right;
+    height:20px;
+    margin:0 20px;
+    padding-top:20px;
+    font-size:15px;
+    color:#919191;
+}
+
+#xuat_ket_qua {
+    text-align: right;
+    height:60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
