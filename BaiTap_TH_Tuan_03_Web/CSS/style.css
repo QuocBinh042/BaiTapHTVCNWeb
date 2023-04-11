@@ -1,0 +1,262 @@
+#menu-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#left {
+    display: flex;
+    width: 400px;
+    margin-top: -2px;
+    justify-content: space-between;
+}
+
+.leftitem {
+    color: #686E77;
+}
+
+.left-input {
+    width: 162px;
+    height: 30px;
+    padding-left: 35px;
+    background-image: url(../IMG/search_glass.png);
+    background-repeat: no-repeat;
+    background-position: 11px;
+    background-size: 17px 17px;
+    border: 1px solid #E3E4E7;
+    border-radius: 5px;
+}
+
+.txt {
+    position: absolute;
+    top: 170px;
+    left: 140px;
+    color: #323842;
+    line-height: 10pt;
+}
+
+.txt-title {
+    font-size: 45px;
+    font-weight: 1000;
+}
+
+.txt-content {
+    font-size: 19.2px;
+}
+
+.product-left2-button {
+    font-size: 20px;
+}
+
+.product-right2-input {
+    width: 200px;
+    height: 42px;
+    font-size: 20px;
+    padding-left: 40px;
+    background-image: url(../IMG/search_glass.png);
+    background-repeat: no-repeat;
+    background-position: 11px;
+    background-size: 25px 25px;
+    border-bottom: 1px solid #E9D9CB;
+    border-top: #E3E4E7;
+    border-left: #E3E4E7;
+    border-right: #E3E4E7;
+}
+
+.product-right2-button {
+    background-image: url(../IMG/sort.PNG);
+    width: 135px;
+    border: 1px solid #FAFAFB;
+    border-radius: 5px;
+    padding-right: 35px;
+    background-color: #F3F4F6;
+    background-repeat: no-repeat;
+    background-position: 95px;
+    background-size: 25px 25px;
+    color: #686E77;
+}
+
+#right {
+    display: flex;
+    width: 350px;
+    margin-top: 3px;
+    margin-right: -83px;
+    margin-left: -65px;
+    justify-content: space-around;
+}
+
+#right ::placeholder {
+    color: #E3E4E7;
+    opacity: 1;
+}
+
+#center {
+    margin-top: 8px;
+    margin-right: -60px;
+    margin-bottom: 3px;
+}
+
+#product {
+    display: flex;
+    width: 1170px;
+    height: 50px;
+    margin-left: 133px;
+    margin-top: 60px;
+    justify-content: space-between;
+    font-size: 1px;
+}
+
+#left2 {
+    display: flex;
+    width: 580px;
+    justify-content: space-between;
+}
+
+#right2 {
+    display: flex;
+    width: 400px;
+    position: absolute;
+    margin-left: 750px;
+    justify-content: space-between;
+    right: 190px;
+}
+
+.rightitem {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    width: 180px;
+    height: 52px;
+    font-size: 18.5px;
+    color: #459D7A;
+    border: #E3E4E7;
+}
+
+#right2 ::placeholder {
+    /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #E3E4E7;
+    opacity: 1;
+    /* Firefox */
+    font-size: 18px;
+}
+
+#product-container {
+    display: flex;
+    margin-top: 100px;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+}
+
+#product-container::text {
+    color: black;
+    position: absolute;
+    top: 170px;
+    left: 140px;
+}
+
+.product-button {
+    width: 78px;
+    height: 26px;
+    border-radius: 20px;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 15px;
+    color: #323842;
+    background-color: #FFC970;
+    font-size: 12px;
+}
+
+#center2 {
+    display: flex;
+    position: absolute;
+    width: 270px;
+    height: 34px;
+    margin-top: 1650px;
+    margin-left: 450px;
+    justify-content: space-between;
+}
+
+.center2-button {
+    height: 34px;
+    width: 36px;
+    font-size: 15px;
+    background-color: white
+}
+
+#about-us {
+    display: flex;
+    position: absolute;
+    background-color: #1E2229;
+    width: 1440px;
+    height: 440px;
+    margin-top: 1800px;
+    margin-bottom: -20px;
+    left: 10px;
+    color: #E3E4E7;
+}
+
+#left-about-us {
+    display: flex;
+    color: #E3E4E7;
+}
+
+#right-about-us {
+    display: flex;
+    position: absolute;
+    width: 440px;
+    height: 280px;
+    margin-top: 100px;
+    margin-left: 880px;
+    color: #E3E4E7;
+    border: 2px solid white;
+}
+
+.footer-contact-input::placeholder {
+    color: #E3E4E7;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.footer-contact-button {
+    width: 126px;
+    height: 51px;
+    background-color: #459D7A;
+    font-size: 20px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #D4D6DA;
+    border-left: 1.5 solid #1E2229;
+    border: 1px solid #459D7A
+}
+
+.footer-contact-input {
+    padding-left: 50px;
+    padding-top: 13px;
+    background-image: url(../IMG/Mail.PNG);
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 26px 26px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 250px;
+    height: 50px;
+    background-color: #1E2229;
+    color: #D4D6DA;
+    border: solid 1.5px;
+}
+
+#footer-right-img {
+    display: flex;
+    width: 124px;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 30px
+}
+
+.footer-right-icon {
+    width: 25px;
+    height: 25px
+}

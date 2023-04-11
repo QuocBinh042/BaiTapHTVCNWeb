@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
         #container {
             width: 1600px;
@@ -51,7 +54,6 @@
             height: 60px;
             border: white;
             background-color: white;
-            
         }
         
         #h_right {
@@ -82,36 +84,35 @@
             width: 1190px;
             height: 380px;
             display: flex;
-            
         }
         
         #content_left {
             width: 773px;
         }
-
-        #content_right{
+        
+        #content_right {
             width: 360px;
             margin-left: 100px;
             border: 2px solid rgb(211, 205, 205);
             border-radius: 4px;
         }
-
-        #content_select{
+        
+        #content_select {
             width: 300px;
             height: 35px;
             margin-left: 20px;
             border: rgb(245, 238, 238);
             background-color: rgb(245, 238, 238);
         }
-
-        #content_button{
+        
+        #content_button {
             width: 300px;
             height: 35px;
             margin-left: 20px;
             margin-top: 15px;
         }
-
-        #img-Shoppingcart{
+        
+        #img-Shoppingcart {
             filter: saturate(50000%);
             display: flex;
             position: absolute;
@@ -119,69 +120,77 @@
             width: 20px;
             margin-left: 110px;
         }
-
-        #c_review{
+        
+        #c_review {
             height: 300px;
             margin-top: 50px;
             border-top: 1px solid darkgray;
         }
-
-        #title-review{
+        
+        #title-review {
             margin-top: 40px;
             height: 35px;
         }
-
-        #reviews_avt{
+        
+        #reviews_avt {
             display: flex;
             position: absolute;
         }
-
-        #c_related-products{
+        
+        #c_related-products {
             height: 500px;
             margin-top: 50px;
         }
-        #title-related-products{
+        
+        #title-related-products {
             margin-top: 40px;
             height: 35px;
         }
-
-        #img-related-products{
+        
+        #img-related-products {
             margin-top: 40px;
             height: 375px;
-            display: grid; grid-template-columns: 285px 285px 285px 285px; gap: 17px;
-            
+            display: grid;
+            grid-template-columns: 285px 285px 285px 285px;
+            gap: 17px;
         }
-
-        #title-product{
-            display: flex; justify-content: space-between;
+        
+        #title-product {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
             width: 250px;
             margin-left: 15px;
         }
-
-        #rating-product{
+        
+        #rating-product {
             width: 250px;
-            display: flex; position: absolute; justify-content: space-between;
-            align-items: center; 
-            margin-top: 10px; margin-left: 15px;
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 15px;
         }
-
-        #c_footer{
+        
+        #c_footer {
             height: 575px;
         }
-        ::placeholder{
+        
+         ::placeholder {
             padding-left: 25px;
         }
-        #c_footer-icon{
+        
+        #c_footer-icon {
             width: 140px;
-            display: flex; 
+            display: flex;
             justify-content: space-between;
             position: absolute;
-           margin-left: 1040px;
-           margin-top: -30px;
-    }
+            margin-left: 1040px;
+            margin-top: -30px;
+        }
     </style>
-    
+
 </head>
 
 <body>
@@ -192,11 +201,11 @@
         <div id="center">
             <div id="c_header">
                 <div id="h_left">
-                    <button id="h_button" style="color: #00BDD6;  border-bottom:4px solid #00BDD6;"><b>Home</b></button>
-                    <button id="h_button">Promotions</button>
-                    <button id="h_button">Best-sellers</button>
-                    <button id="h_button">New releases</button>
-                    <button id="h_button">Support</button>
+                    <button id="h_button" style="color: #00BDD6;  border-bottom:4px solid #00BDD6;" class="btn btn-link"><b>Home</b></button>
+                    <button id="h_button" class="btn btn-link">Promotions</button>
+                    <button id="h_button" class="btn btn-link">Best-sellers</button>
+                    <button id="h_button" class="btn btn-link">New releases</button>
+                    <button id="h_button" class="btn btn-link">Support</button>
                 </div>
                 <div id="h_right">
                     <input type="text" placeholder="Search..." style="background-image: url(../img/KinhLup.PNG); background-repeat: no-repeat;" id="h_right_placeholder">
@@ -275,7 +284,7 @@
                     </div>
                 </div>
 
-                <div id="content_right" >
+                <div id="content_right">
                     <h1 style="color: #00BDD6; text-align: right; margin-right: 20px;"> $99</h1>
                     <select name="" id="content_select">
                         <option value="">Color</option>
@@ -290,23 +299,23 @@
                         <span style="opacity: 50%; ">Total</span>
                         <span><b style="margin-left: 230px;">$265</b> </span>
                     </div>
-                    <button id="content_button" style="color: white; background-color: #00BDD6; border: #00BDD6; border-radius: 3px; font-size: 15px;">Buy now</button>
-                    <img src="../img/Shopping cart simple 1.png" alt="" id="img-Shoppingcart" >
-                    <button id="content_button" style="color: #00BDD6; background-color: white; border: 1px solid #00BDD6;  border-radius: 3px; font-size: 15px;">Add to cart</button>
+                    <button id="content_button" style="color: white; background-color: #00BDD6; border: #00BDD6; border-radius: 3px; font-size: 15px;" class="btn btn-success">Buy now</button>
+                    <img src="../img/Shopping cart simple 1.png" alt="" id="img-Shoppingcart">
+                    <button id="content_button" style="color: #00BDD6; background-color: white; border: 1px solid #00BDD6;  border-radius: 3px; font-size: 15px;" class="btn btn-success">Add to cart</button>
                 </div>
 
-                
+
             </div>
             <div id="c_review">
                 <div id="title-review">
                     <b style="font-size: 25px;">Reviews</b>
-                        <img src="../img/Rating 304.png" alt="" style="vertical-align: text-bottom;">
-                        <b>4.20</b> <span style="opacity: 70%;">(99 reviews) </span>
-                        <span style="opacity: 70%; margin-left: 790px;"> Show all reviews &nbsp;&gt</span>
+                    <img src="../img/Rating 304.png" alt="" style="vertical-align: text-bottom;">
+                    <b>4.20</b> <span style="opacity: 70%;">(99 reviews) </span>
+                    <span style="opacity: 70%; margin-left: 790px;"> Show all reviews &nbsp;&gt</span>
                 </div>
                 <div>
                     <table style="width: max-content; text-align: start; margin-top: 20px;">
-                        <tr >
+                        <tr>
                             <td>
                                 <img src="../img/Avatar 753.png" alt="" style="vertical-align: top;  ">
                                 <span style="margin-left: 10px;"><b>Jay Rutherford</b><span style="opacity: 70%; margin-left: 10px;">3d ago</span></span>
@@ -324,8 +333,8 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr >
-                            <td >
+                        <tr>
+                            <td>
                                 <div style=" margin-top: 30px;">
                                     <img src="../img/Avatar 755.png" alt="" style="vertical-align: top;">
                                     <span style="margin-left: 10px;"><b>Wei Arnold</b><span style="opacity: 70%; margin-left: 10px;">3d ago</span></span>
@@ -334,7 +343,7 @@
                                         Ut commado quis sit in consequat sit nisi dolor adipisicing officia tempor do duis <br>consequat dolore dolore ipsum.
                                     </div>
                                 </div>
-                               
+
                             </td>
                             <td>
                                 <div style=" margin-top: 30px;">
@@ -342,7 +351,7 @@
                                     <span style="margin-left: 10px;"><b>Judith Mejia</b><span style="opacity: 70%; margin-left: 10px;">3d ago</span></span>
                                     <img src="../img/Rating 299.png" alt="" style="display: flex; position: absolute; margin-left: 130px; margin-top: -15px;">
                                     <div style="margin-top: 10px; margin-left: 80px;">
-                                        Ad laborum dolor cupidatat culpa mollit non non sunt qui. In ut et aute mollit <br>elusmod occaecat elusmod ml.  </div>
+                                        Ad laborum dolor cupidatat culpa mollit non non sunt qui. In ut et aute mollit <br>elusmod occaecat elusmod ml. </div>
                                 </div>
                             </td>
                         </tr>
@@ -355,7 +364,7 @@
                     <span style="opacity: 70%; margin-left: 1100px;"> See more  &gt</span>
                 </div>
                 <div id="img-related-products">
-                     <div>
+                    <div>
                         <img src="../img/Image 1704.png" alt="">
                         <div id="title-product">
                             <h1 style="font-size: 22px;">Product title</h1>
@@ -412,26 +421,34 @@
                     </div>
                 </div>
             </div>
-            
+
             <div id="c_footer">
                 <center style="margin-top: 50px;"><img src="../img/Image 1713.png" alt=""></center>
                 <center style="margin-top: 40px;">
                     <b style="font-size: 25px;">Subscribe to our newsletter</b>
                 </center>
-               <center style="margin-top: 20px;">
-                <div style=" width: 380px; height: 35px; display: flex; position: absolute; justify-content: space-around;margin-left: 400px;">
-                    <span style="display: flex; position: absolute; margin-left: -350px; margin-top: 4px;">&#9993;</span> 
-                    <input class="input-field" type="text" style=" border-bottom-left-radius: 3px; border-top-left-radius: 3px; height: 30px; width: 262px; background-color: #F3F4F6; border: #F3F4F6; " placeholder="Input your email">
-                    <button style="border-top-right-radius: 3px; border-bottom-right-radius: 3px;  width: 112px; height: 32px; color: white; background-color: #00BDD6;  border: 2px solid #00BDD6;  font-size: 14px;">Subscribe</button>
-                </div>
+                <center style="margin-top: 20px;">
+                    <div style=" width: 380px; height: 35px; display: flex; position: absolute; justify-content: space-around;margin-left: 400px;">
+                        <span style="display: flex; position: absolute; margin-left: -350px; margin-top: 4px;">&#9993;</span>
+                        <input class="input-field" type="text" style=" border-bottom-left-radius: 3px; border-top-left-radius: 3px; height: 30px; width: 262px; background-color: #F3F4F6; border: #F3F4F6; " placeholder="Input your email">
+                        <button style="border-top-right-radius: 3px; border-bottom-right-radius: 3px;  width: 112px; height: 32px; color: white; background-color: #00BDD6;  border: 2px solid #00BDD6;  font-size: 14px;" class="btn btn-success">Subscribe</button>
+                    </div>
                 </center>
                 <center style="margin-top: 130px; margin-left: 100px;">
                     <table style="width: 800px; height: 132px;">
-                        <tr >
-                            <td><h2>Product</h2></td>
-                            <td><h2>Resources</h2></td>
-                            <td><h2>Company</h2></td>
-                            <td><h2>Plans & Pricing</h2></td>
+                        <tr>
+                            <td>
+                                <h2>Product</h2>
+                            </td>
+                            <td>
+                                <h2>Resources</h2>
+                            </td>
+                            <td>
+                                <h2>Company</h2>
+                            </td>
+                            <td>
+                                <h2>Plans & Pricing</h2>
+                            </td>
                         </tr>
                         <tr style="height: 30px;">
                             <td>Features</td>
@@ -452,7 +469,7 @@
                             <td>Organization</td>
                         </tr>
                     </table>
-                </center >
+                </center>
                 <div style="margin-top: 58px; margin-left: 10px;">
                     <select style="width: 120px; height: 35px; border-radius: 5px; background-color: #F3F4F6; color: black; border: 2px solid #F3F4F6">
                         <option ><b>English</b> </option>
@@ -462,7 +479,7 @@
                         <img src="../img/Twitter 9.png" alt="Twitter-icon">
                         <img src="../img/Facebook 9.png" alt="Facebook-icon">
                         <img src="../img/LinkedIn 8.png" alt="LinkedIn-icon">
-                        <img src="../img/YouTube 8.png" alt="YouTube-icon" >     
+                        <img src="../img/YouTube 8.png" alt="YouTube-icon">
                     </div>
                 </div>
             </div>
