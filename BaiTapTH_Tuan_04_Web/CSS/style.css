@@ -1,0 +1,299 @@
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 870px;
+            margin-left: 33px;
+            margin-top: 20px;
+            
+        }
+        
+        #center_above {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        #center_img {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 70px;
+        }
+        
+        #center_button {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            width: 485px;
+            height: 45px;
+            margin-top: 5px;
+            margin-left: 170px;
+        }
+        
+        #center_img2 {
+            display: flex;
+            width: 835px;
+            justify-content: space-between;
+            margin-right: 55px;
+            margin-top: 25px;
+        }
+        
+        #center_button-user{
+            width: 80px; height: 28px; 
+            border-radius: 25px; border: #E34D73; 
+            color: azure; font-size: 12px;
+            background-color: #E34D73; 
+            display: flex; position: absolute; justify-content: center; 
+            padding-left: 25px; align-items: center;            
+        }
+
+        #center_img-user{
+            display: flex; position: absolute; justify-content: center; 
+            width: 10px; height: 10px; 
+            margin-top: 9px;
+            margin-left: 11px;
+        }
+        #center_button-date{
+            width: 120px; height: 30px;
+            border: white; background-color: white;
+            display: flex; position: absolute; justify-content: center; margin-left: 90px;
+            background-image: url(../img/calender_small.png); 
+            background-repeat: no-repeat; background-size: 15px; background-position: 10px;
+            padding-left: 31px;   
+            padding-top: 7px; 
+            
+        }
+
+        #center_button-time{
+            width: 120px; height: 30px; 
+            display: flex; position: absolute; justify-content: center; 
+            margin-left: 235px;
+            padding-top: 8px;
+            border: white; background-color: white;
+        }
+
+        #center_time{
+            width: 92px; height: 38px; 
+            border-radius: 20px; border: 1px solid red; 
+            background-color: white;
+            font-size: 14px; color: red; 
+            display: flex; justify-content: center;
+            padding-right: 10px; align-items: center;
+            margin-right: 38px; 
+            margin-top: 13px;
+        }
+        
+        #center_img_name{
+            width: 160px; height: 38px; 
+            border-radius: 3px; border: 1px solid #757679;
+            background-color: #757679;
+            font-size: 14px; color: white;
+            display: flex; position: absolute; justify-content: center;
+            padding-right: 10px; align-items: center;
+            margin-left: 20px;
+            margin-top: 12px;
+            
+        }
+
+        #center_img_name2{
+            width: 160px; height: 28px; 
+            border-radius: 3px; border: 1px solid #757679;
+            background-color: #757679;
+            font-size: 11px; color: white;
+            display: flex; position: absolute; justify-content: center;
+            padding-right: 10px; align-items: center;
+            margin-left: 10px;
+            margin-top: 8px;
+        }
+
+        #center_mic{
+            display: flex; 
+            position: absolute;
+            width: 28px; height: 28px;
+            margin-left: 225px;
+            margin-top: 8px;
+        }
+
+        #img2_center {
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+                
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 1px solid rgb(216, 211, 211);
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            margin-top: -30px;
+            margin-left: -6px;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+
+        #right{
+            margin-left: 33px;
+            margin-top: 20px;
+            width: 450px;            
+            border-left: 2px solid rgb(216, 211, 211);
+        }
+
+        #right_above {
+            width: 400px;
+            height: 300px;
+            position: absolute; display: flex; justify-content: space-around;
+            border-bottom: 2px solid #cfcfcf;
+        }
+
+        #right_add{
+            width: 420px; height: 80px;
+            position: absolute; display: flex; justify-content: space-around;
+            
+        }
+        #right_button-add{
+            width: 73px; height: 35px; 
+            background-color: white;
+            color: #E34D73;
+            margin-top: 10px;
+            border-radius: 4px; border: 1px solid #E34D73; 
+        }
+        #right_infor{
+            width: 420px; height: 220px;
+            margin-top: 80px;
+            margin-left: 20px;
+        }
+        #right_below {
+            width: 420px;
+            height: 300px;
+            position: absolute; display: flex; justify-content: space-between;
+            margin-top: 320px;
+        }
+
+        #right_title-chat{
+            width: 420px;
+            height: 80px;
+            margin-left: 20px;
+        }
+
+        #right_chat{
+            width: 420px;
+            height: 550px;
+            position: absolute; display: flex; justify-content: space-around;
+            margin-top: 80px;    
+            margin-left: 30px;  
+        }
+        
+        #right_chat1{
+            width: 420px;
+            height: 120px;
+            position: absolute; display: flex; justify-content: space-around;
+        }
+        #right_chat1-title{
+            width: 420px;
+            height: 35px;
+            position: absolute; display: flex; 
+            margin-left: 10px; 
+            
+        }
+        #right_chat1-content{
+            width: 345px;
+            height: 60px;
+            margin-top: 55px;
+            margin-left: 50px;
+            position: absolute; display: flex; 
+            background-color: #eee8e8;
+        }
+
+        #right_chat2{
+            width: 420px;
+            height: 120px;
+            position: absolute; display: flex; justify-content: space-around;
+            margin-top: 120px;
+        }
+        #right_chat2-title{
+            width: 420px;
+            height: 35px;
+            position: absolute; display: flex;     
+            margin-left: 10px;      
+        }
+        #right_chat2-content{
+            width: 340px;
+            height: 60px;
+            margin-top: 55px;
+            margin-left: 50px;
+            position: absolute; display: flex; 
+            background-color: #eee8e8;
+        }
+
+        #right_chat3{
+            width: 420px;
+            height: 120px;
+            position: absolute; display: flex; justify-content: space-around;
+            margin-top: 240px;
+        }
+        #right_chat3-title{
+            width: 420px;
+            height: 35px;
+            position: absolute; display: flex;    
+            margin-left: 10px;       
+        }
+        #right_chat3-content{
+            width: 100px;
+            height: 45px;
+            margin-top: 55px;
+            margin-left: -160px;
+            position: absolute; display: flex; 
+            background-color: #eee8e8;
+        }
+
+        #right_chat4{
+            width: 420px;
+            height: 35px;
+            position: absolute; display: flex;    
+            margin-top: 360px;
+            margin-left: 10px; 
+        }
+        
+        #right_send{
+            width: 420px;
+            height: 35px;
+            position: absolute; display: flex;    
+            margin-top: 410px;
+            margin-left: 10px; 
+        }
+        #right_button-send{
+            width: 365px;
+            height: 40px;
+            position: absolute; display: flex; 
+            font-size: 15px;
+            border: #eee8e8;
+        }
