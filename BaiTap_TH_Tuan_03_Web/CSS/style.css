@@ -17,17 +17,25 @@
 }
 
 .left-input {
-    width: 162px;
-    height: 30px;
-    padding-left: 35px;
-    background-image: url(../IMG/search_glass.png);
-    background-repeat: no-repeat;
-    background-position: 11px;
-    background-size: 17px 17px;
+    width: 170px;
+    height: 35px;
+    text-align: center;
     border: 1px solid #E3E4E7;
     border-radius: 5px;
+    padding-left: 20px;
 }
 
+.left-button {
+    display: flex;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-top: 5px;
+}
 .txt {
     position: absolute;
     top: 170px;
@@ -45,26 +53,36 @@
     font-size: 19.2px;
 }
 
-.product-left2-button {
+#product-left2-button {
     font-size: 20px;
+    color: #459D7A;
 }
 
-.product-right2-input {
+.product-right-input {
     width: 200px;
     height: 42px;
     font-size: 20px;
     padding-left: 40px;
-    background-image: url(../IMG/search_glass.png);
-    background-repeat: no-repeat;
-    background-position: 11px;
-    background-size: 25px 25px;
     border-bottom: 1px solid #E9D9CB;
     border-top: #E3E4E7;
     border-left: #E3E4E7;
     border-right: #E3E4E7;
+    
 }
 
-.product-right2-button {
+.product-right2-button-search{
+    display: flex;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+#product-right2-button {
     background-image: url(../IMG/sort.PNG);
     width: 135px;
     border: 1px solid #FAFAFB;
@@ -75,6 +93,8 @@
     background-position: 95px;
     background-size: 25px 25px;
     color: #686E77;
+    font-size: 20px;
+   
 }
 
 #right {
@@ -84,6 +104,7 @@
     margin-right: -83px;
     margin-left: -65px;
     justify-content: space-around;
+    
 }
 
 #right ::placeholder {
@@ -157,7 +178,24 @@ button {
     left: 140px;
 }
 
-.product-button {
+.product-table-tr{
+    width: 1200px;
+    height: 500px; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.product-table-td{
+    width: 1200px;
+    height: 460px;
+}
+
+.product-table-td-img{
+    float: right; 
+    margin-top: -10px; 
+    margin-right: 33px;
+}
+#product-button {
     width: 78px;
     height: 26px;
     border-radius: 20px;
@@ -177,8 +215,14 @@ button {
     margin-top: 1650px;
     margin-left: 450px;
     justify-content: space-between;
+    
 }
 
+.product-table-td-txt{
+    font-size: 18px; 
+    vertical-align: top; 
+    color: #D4D6DA;
+}
 .center2-button {
     height: 34px;
     width: 36px;
@@ -203,6 +247,28 @@ button {
     color: #E3E4E7;
 }
 
+
+#left-about-us-table {
+    width: 600x; 
+    height: 280px; 
+    margin-top: 80px; 
+    margin-left: 130px;
+}
+
+.left-about-us-table-tr {
+    width: 600px; 
+    height: 20px; 
+    font-size: 15px;
+}
+
+.left-about-us-table-select {
+    width: 120px; 
+    height: 35px; 
+    border-radius: 5px; 
+    background-color: #1E2229; 
+    color: #D4D6DA; 
+    border: solid 1.5px;
+}
 #right-about-us {
     display: flex;
     position: absolute;
@@ -211,7 +277,6 @@ button {
     margin-top: 100px;
     margin-left: 880px;
     color: #E3E4E7;
-    border: 2px solid white;
 }
 
 .footer-contact-input::placeholder {

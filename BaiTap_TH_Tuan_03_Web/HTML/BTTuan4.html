@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List products</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -14,7 +15,7 @@
 
 
 <body>
-    <!-- Menu -->
+
     <div id="menu-container">
         <div id="left">
             <button class="leftitem btn-default">Shop</button>
@@ -27,6 +28,7 @@
         </div>
         <div id="right">
             <div class="rightitem">
+                <button class="left-button btn btn-xs"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" class="left-input" placeholder="Search product..."> </div>
             <div>
                 <img src="../IMG/2_xe.png" alt="">
@@ -47,128 +49,129 @@
     <div id="product">
         <div id="left2">
             <div>
-                <button style="background-color: #459D7A; color: aliceblue; border-radius: 3px; " class="product-left2-button btn btn-success">All Products</button>
-                <button style="background-color: #FFFFFF; border-right:1px solid #459D7A; " class="product-left2-button btn btn-xs">Face </button>
-                <button style="background-color: #FFFFFF; " class="product-left2-button btn btn-xs">Body</button>
+                <button style="background-color: #459D7A; color: aliceblue; border-radius: 3px; " class="btn btn-success" id="product-left2-button">All Products</button>
+                <button style="background-color: #FFFFFF; border-right:1px solid #459D7A; " class="btn btn-xs" id="product-left2-button">Face </button>
+                <button style="background-color: #FFFFFF; " class="btn btn-xs" id="product-left2-button">Body</button>
             </div>
         </div>
         <div id="right2">
-            <div style="margin-top: 10px;"><input type="text" placeholder="Search product..." class="product-right2-input"></div>
-            <button class="product-right2-input btn btn-sm">Sort by</button>
+            <button class="product-right2-button-search btn btn-xs"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div style="margin-top: 10px;"><input type="text" placeholder="Search product..." class="product-right-input"></div>
+            <button class="btn-default" id="product-right2-button">Sort by</button>
         </div>
         <div>
         </div>
 
         <div id="product-container">
             <table>
-                <tr style="width: 1200px; height: 500px; display: flex; justify-content: space-between;">
-                    <td style=" width: 1200px; height: 460px;">
+                <tr class="product-table-tr">
+                    <td class="product-table-td">
                         <div>
-                            <button class="product-button btn-link">Best-seller</button>
+                            <button class="btn-link" id="product-button">Best-seller</button>
                         </div>
                         <img src="../IMG/Image 1 (1).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px;">$32</b>
-                            <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$42</b>
+                            <b class="product-table-td-txt">$42</b>
                         </font>
                     </td>
-                    <td style=" width: 1200px; height: 460px;">
+                    <td class="product-table-td">
                         <div>
-                            <button class="product-button btn-link">Best-seller</button>
+                            <button class="btn-link" id="product-button">Best-seller</button>
                         </div>
                         <img src="../IMG/Image 1 (2).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px;">$22</b>
-                            <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$28</b>
+                            <b class="product-table-td-txt">$28</b>
                         </font>
                     </td>
-                    <td style=" width: 1200px; height: 460px;">
+                    <td class="product-table-td">
                         <div>
-                            <button class="product-button btn-link">Best-seller</button>
+                            <button class="btn-link" id="product-button">Best-seller</button>
                         </div>
                         <img src="../IMG/Image 1 (3).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px;">$18</b>
-                            <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$26</b>
+                            <b class="product-table-td-txt">$26</b>
                         </font>
                     </td>
-                    <td style=" width: 1200px; height: 460px;">
+                    <td class="product-table-td">
                         <div>
-                            <button class="product-button btn-link">Best-seller</button>
+                            <button class="btn-link" id="product-button">Best-seller</button>
                         </div>
                         <img src="../IMG/Image 1 (4).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px;">$48</b>
-                            <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$56</b>
+                            <b class="product-table-td-txt">$56</b>
                         </font>
                     </td>
                 </tr>
-                <tr style="width: 1200px; height:500px; display: flex; justify-content: space-between;">
-                    <td style=" width: 1200px; height: 460px;">
+                <tr class="product-table-tr">
+                    <td class="product-table-td">
                         <img src="../IMG/Image 1 (5).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px;">$31</b>
                         </font>
                     </td>
-                    <td style=" width: 1200px; height: 460px;">
+                    <td class="product-table-td">
                         <div>
-                            <button class="product-button btn-link">New</button>
+                            <button class="btn-link" id="product-button">New</button>
                         </div>
                         <img src="../IMG/Image 1 (6).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px;">$40</b>
-                            <b style="font-size: 18px; vertical-align: top; color: #D4D6DA;">$48</b>
+                            <b class="product-table-td-txt">$48</b>
                         </font>
                     </td>
-                    <td style=" width: 1200px; height: 460px;">
+                    <td class="product-table-td">
                         <img src="../IMG/Image 1 (7).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px;">$26</b>
                         </font>
                     </td>
-                    <td style=" width: 1200px; height: 460px;">
+                    <td class="product-table-td">
                         <img src="../IMG/Image 1 (8).png " alt="" style="width: 262px; height: 333px">
                         <font face="Arial" size="3px" style="color: #323842; line-height: 10pt; ">
                             <b>Product title</b>
                             <br> Labore sint ipsum dolore mollit
                             <br><br>
-                            <img src="../IMG/Button 1 (2).png" alt="" style="float: right; margin-top: -10px; margin-right: 33px;">
+                            <img src="../IMG/Button 1 (2).png" alt="" class="product-table-td-img">
                             <b style="font-size: 36px; ">$18</b>
                         </font>
                     </td>
                 </tr>
-                <tr style="width: 1200px; height: 500px; display: flex; justify-content: space-between; ">
+                <tr class="product-table-tr">
                     <td style=" width: 1200px; height: 460px; ">
                         <div>
-                            <button class="product-button btn-link">New</button>
+                            <button class="btn-link" id="product-button">New</button>
                         </div>
                         <img src="../IMG/Image 1 (9).png " alt=" " style="width: 262px; height: 333px ">
                         <font face="Arial " size="3px " style="color: #323842; line-height: 10pt; ">
@@ -200,9 +203,9 @@
                             <b style="font-size: 36px; ">$44</b>
                         </font>
                     </td>
-                    <td style=" width: 1200px; height: 460px; ">
+                    <td class="">
                         <div>
-                            <button class="product-button btn-link ">New</button>
+                            <button class="btn-link" id="product-button">New</button>
                         </div>
                         <img src="../IMG/Image 1 (12).png " alt=" " style="width: 262px; height: 333px ">
                         <font face="Arial " size="3px " style="color: #323842; line-height: 10pt; ">
@@ -218,7 +221,7 @@
             </table>
         </div>
 
-        <div id="center2 ">
+        <div id="center2">
             <img src="../IMG/Button 1 (5).png " alt=" ">
             <button class="center2-button btn btn-link ">1</button>
             <button style="background-color: #edeef0; " class="center2-button btn btn-link ">2</button>
@@ -228,80 +231,49 @@
         </div>
 
         <div id="about-us">
-            <div id="left-about-us ">
-                <table style="width: 600x; height: 280px; margin-top: 80px; margin-left: 130px; ">
-                    <tr style="width: 600px; height: 20px; ">
-                        <td style="width: 175px; ">
-                            <font face="Arial Black " size="4px "><b>About</b></font>
-                        </td>
-                        <td style="width: 175px; ">
-                            <font face="Arial Black " size="4px "><b>Help</b></font>
-                        </td>
-                        <td style="width: 175px; ">
-                            <font face="Arial Black " size="4px "><b>Contact</b></font>
-                        </td>
+            <div id="left-about-us">
+                <table id="left-about-us-table">
+                    <tr style="width: 600px; height: 20px; font-size: 20px;">
+                        <td style="width: 175px; ">About</td>
+                        <td style="width: 175px; ">Help</td>
+                        <td style="width: 175px; ">Contact</td>
                     </tr>
-                    <tr style="width: 600px; height:5px; ">
+                    <tr class="left-about-us-table-tr">
+                        <td style="width: 175px; ">Home</td>
+                        <td style="width: 175px; ">Shipping & Returns </td>
+                        <td style="width: 175px; ">Phone:</td>
+                    </tr>
+                    <tr class="left-about-us-table-tr">
+                        <td style="width: 175px; ">Shop</td>
+                        <td style="width: 175px; ">Track Order</td>
+                        <td style="width: 175px; "><b>(+1)123 356 7893</b></td>
+                    </tr>
+                    <tr class="left-about-us-table-tr">
+                        <td style="width: 175px; ">Our story</td>
+                        <td style="width: 175px; ">FAQs</td>
+                        <td style="width: 175px; ">Email:</td>
+                    </tr>
+                    <tr class="left-about-us-table-tr">
+                        <td style="width: 175px; ">Blogs</td>
+                        <td style="width: 175px; "></td>
+                        <td style="width: 175px; "><b>name@email.com</b></td>
+                    </tr>
+                    <tr class="left-about-us-table-tr">
                         <td style="width: 175px; ">
-                            <font face="Arial " size="2px ">Home</font>
-                        </td>
-                        <td style="width: 175px; ">
-                            <font face="Arial " size="2px " ">Shipping & Returns</font>
-                    </td>
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px ">Phone:</font>
-                    </td>
-                </tr>
-                <tr style="width: 600px; height: 5px; ">
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px ">Shop</font>
-                    </td>
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px ">Track Order</font>
-                    </td>
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px "><b>(+1)123 356 7893</b> </font>
-                    </td>
-                </tr>
-                <tr style="width: 600px; height: 5px; ">
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px ">Our story</font>
-                    </td>
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px ">FAQs</font>
-                    </td>
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px ">Email:</font>
-                    </td>
-                </tr>
-                <tr style="width: 600px; height:5px; ">
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px ">Blogs</font>
-                    </td>
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px "></font>
-                    </td>
-                    <td style="width: 175px; ">
-                        <font face="Arial " size="2px "><b>name@email.com</b></font>
-                    </td>
-                </tr>
-                <tr style="width: 600px; height: 5px; ">
-                    <td style="width: 175px; ">
-                        <select name="month " id="month " style="width: 120px; height: 35px; border-radius: 5px; background-color: #1E2229; color: #D4D6DA; border: solid 1.5px; ">
-                        <option value="January " ><b>English</b> </option>
-                    </section>
-                </td>
-                
-            </tr>
+                            <select class="left-about-us-table-select" >
+                                <option value="English" ><b>English</b> </option>
+                            </section>
+                        </td>    
+                    </tr>
         </table>
     </div>
-    <div id="right-about-us ">
+    <div id="right-about-us">
         <div>
-            <b style="font-size:20px ">Receive new promotions </b><br>
+            <b style="font-size:20px">Receive new promotions </b><br>
             <p style="line-height: 50px; font-size: 15px; ">Duis ea tempor commodo amet reprehende</p> 
             <input type="text " name=" " placeholder="Input your email " class="footer-contact-input ">
             <button class="footer-contact-button btn-success ">Subscribe</button>
-            <div id="footer-right-img ">
+            <div id="footer-right-img">
                 <img src="../IMG/Twitter 1.png " alt="Twitter-icon " class="footer-right-icon ">
                 <img src="../IMG/Facebook 1.png " alt="Facebook-icon " class="footer-right-icon ">
                 <img src="../IMG/LinkedIn 1.png " alt="LinkedIn-icon " class="footer-right-icon ">
