@@ -6,16 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEMO THI CUOI KY</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-
+    <div class="header">
+        <span id="header-txt">Tư vấn Online</span>
+    </div>
+    <div class="nav">
+        <button class="btn-link" id="nav-btn">Trang chủ</button>
+        <button class="btn-link" id="nav-btn" data-toggle="modal" data-target="#myModal">Đặt lịch</button>
     </div>
 
+    <div style="border: 2px solid gray;">
+        <table class="table table-bordered" border="2px">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Mã bệnh nhân</th>
+                    <th>Mật khẩu</th>
+                    <th>Ngày khám</th>
+                    <th>Phụ thu dịch vụ</th>
+                    <th>Chuyên khoa</th>
+                </tr>
+            </thead>
+            <tbody id="table_model">
+                <tr>
+                    <td>1</td>
+                    <td>123456a</td>
+                    <td>BN-012345</td>
+                    <td>12/8/2020</td>
+                    <td>1000000</td>
+                    <td>Ngoại tổng quát</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 20px;">21081801 - Trần Lê Quốc Bình - DHKTPM17ATT</h2>
 </body>
 
 </html>
