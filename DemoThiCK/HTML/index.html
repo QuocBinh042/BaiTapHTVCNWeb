@@ -23,7 +23,7 @@
     </div>
 
     <div style="border: 2px solid gray;">
-        <table class="table table-bordered">
+        <table class="table table-bordered" id="table_model">
             <thead>
                 <tr>
                     <th>STT</th>
@@ -34,7 +34,7 @@
                     <th>Chuyên khoa</th>
                 </tr>
             </thead>
-            <tbody id="table_model ">
+            <tbody>
                 <tr>
                     <td>1</td>
                     <td>123456a</td>
@@ -95,16 +95,16 @@
 
                     <div class="box flex-column d-flex">
                         <label><b>Chuyên khoa</b> </label>
-                        <select class="box-input">
+                        <select class="box-input" id="chuyenKhoa">
                             <option value="v1">Ngoại tổng quát</option>
                             <option value="v2">Nhi</option>
                             <option value="v3">Nội tổng quát</option>
                         </select>
                     </div>
-                    <button class="btn btn-primary" style="margin-top: 20px;" onclick="app()">Đặt lịch</button>
+                    <button type="submit" class="btn btn-primary" data-dismiss="modal" style="margin-top: 20px;" onclick="app()">Đặt lịch</button>
                 </div>
                 <div class=" modal-footer ">
-                    <button class="btn btn-primary " data-dismiss="modal ">Close</button>
+                    <button class="btn btn-primary " data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

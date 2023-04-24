@@ -33,5 +33,14 @@ function app() {
         sum += 500000;
     }
 
-
+    let chuyenKhoa = $('#chuyenKhoa').find(":selected").text()
+    let index = 2
+    var table = document.getElementById(table_model)
+    table.insertAdjacentHTML(0, index)
+    table.insertAdjacentHTML(1, maBN)
+    table.insertAdjacentHTML(2, mk)
+    table.insertAdjacentHTML(3, ngay)
+    table.insertAdjacentHTML(4, sum)
+    table.insertAdjacentHTML(5, chuyenKhoa)
+    alert('Thêm thành công');
 }
