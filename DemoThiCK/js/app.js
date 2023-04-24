@@ -12,4 +12,11 @@ function app() {
         alert('Mật khẩu không hợp lệ');
         return;
     }
+
+    let ngay = new Date(document.getElementById('ngayKham').value)
+    if (ngay < new Date()) {
+        alert('Ngày không hợp lệ');
+        return;
+    }
+
 }
