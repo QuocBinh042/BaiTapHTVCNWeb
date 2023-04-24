@@ -1,5 +1,5 @@
 body {
-    width: 1300px;
+    width: 100%;
     border: 2px solid gray;
     height: 500px;
 }
@@ -9,7 +9,7 @@ body {
     background-color: #EFF2F0;
     background-image: url(../IMAGES/anh.webp);
     background-repeat: space;
-    border: 2px solid gray;
+    border: 1px solid gray;
 }
 
 #header-txt {
@@ -24,11 +24,36 @@ body {
 
 .nav {
     height: 50px;
-    border: 2px solid gray;
+    border: 1px solid gray;
 }
 
 #nav-btn {
     background-color: white;
     border: none;
     margin-left: 30px;
+}
+
+.box {
+    margin-top: 10px;
+}
+
+.box-note {
+    color: red;
+    font-style: italic;
+}
+
+.box-input {
+    border: 2px solid rgb(243, 237, 237);
+    height: 35px;
+    padding-left: 20px;
+}
+
+.checkbox-loai {
+    display: flex;
+    margin-left: 30px;
+}
+
+.checkbox-lblloai {
+    margin-top: 4px;
+    margin-left: 4px;
 }

@@ -22,7 +22,7 @@
     </div>
 
     <div style="border: 2px solid gray;">
-        <table class="table table-bordered" border="2px">
+        <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>STT</th>
@@ -33,7 +33,7 @@
                     <th>Chuyên khoa</th>
                 </tr>
             </thead>
-            <tbody id="table_model">
+            <tbody id="table_model ">
                 <tr>
                     <td>1</td>
                     <td>123456a</td>
@@ -46,7 +46,70 @@
         </table>
     </div>
 
-    <h2 style="text-align: center; margin-top: 20px;">21081801 - Trần Lê Quốc Bình - DHKTPM17ATT</h2>
+    <h2 style="text-align: center; margin-top: 20px; ">21081801 - Trần Lê Quốc Bình - DHKTPM17ATT</h2>
+
+    <div class="modal active" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 700px;">
+                <div class="modal-header">
+                    <h3 class="modal-title">Đặt lịch khám online</h3>
+                    <button type="button" class="btn btn-default">x</button>
+                </div>
+                <div class="box modal-body">
+                    <div class="flex-column d-flex">
+                        <label><b>Mã bệnh nhân</b> </label>
+                        <input type="text" name="" id="" class="box-input" placeholder="Ma benh nhan">
+                        <span class="box-note">(*)BN-YYYYYY</span>
+                    </div>
+
+                    <div class="box flex-column d-flex">
+                        <label><b>Mật khẩu</b> </label>
+                        <input type="text" name="" id="" class="box-input" placeholder="Mat khau">
+                        <span class="box-note">(*)</span>
+                    </div>
+
+                    <div class="box flex-column d-flex">
+                        <label><b>Ngày khám</b> </label>
+                        <input type="date" name="" id="" class="box-input" placeholder="mm/dd/yyyy">
+                        <span class="box-note">(*)</span>
+                    </div>
+
+                    <div class="box flex-column d-flex">
+                        <label><b>Loại dịch vụ</b> </label>
+                        <div class="d-flex flex-row">
+                            <div class="checkbox-loai d-flex flex-row">
+                                <input type="checkbox" value="option1">
+                                <label for="" class="checkbox-lblloai">Khám theo yêu cầu</label>
+                            </div>
+                            <div class="checkbox-loai d-flex flex-row">
+                                <input type="checkbox" value="option2">
+                                <label for="" class="checkbox-lblloai">Điều trị ngoại trú</label>
+                            </div>
+                            <div class="checkbox-loai d-flex flex-row">
+                                <input type="checkbox" value="option3">
+                                <label for="" class="checkbox-lblloai">Bác sĩ theo yêu cầu</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box flex-column d-flex">
+                        <label><b>Chuyên khoa</b> </label>
+                        <select class="box-input">
+                            <option value="v1">Ngoại tổng quát</option>
+                            <option value="v2">Nội tổng quát</option>
+                            <option value="v3">Thần kinh</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary" style="margin-top: 20px;">Đặt lịch</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
