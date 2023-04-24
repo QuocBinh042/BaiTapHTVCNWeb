@@ -6,4 +6,10 @@ function app() {
         return;
     }
 
+    let mk = document.getElementById('matKhau').value
+    let resultMatKhau = mk.match(/.{6,}/g);
+    if (!resultMatKhau) {
+        alert('Mật khẩu không hợp lệ');
+        return;
+    }
 }
