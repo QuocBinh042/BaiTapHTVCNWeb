@@ -34,13 +34,17 @@ function app() {
     }
 
     let chuyenKhoa = $('#chuyenKhoa').find(":selected").text()
+    alert('Thêm thành công');
+
     let index = 2
     var table = document.getElementById(table_model)
-    table.insertAdjacentHTML(0, index)
-    table.insertAdjacentHTML(1, maBN)
-    table.insertAdjacentHTML(2, mk)
-    table.insertAdjacentHTML(3, ngay)
-    table.insertAdjacentHTML(4, sum)
-    table.insertAdjacentHTML(5, chuyenKhoa)
-    alert('Thêm thành công');
+
+    var result = $(maBN) + $(mk) + $(ngay) + $(sum) + $(chuyenKhoa)
+    table.insertAdjacentText(1, result)
+        // var result = "<td>" + $(maBN) + "</td>";
+        // result = "<td>" + $(mk) + "</td>";
+        // result = "<td>" + $(ngay) + "</td>";
+        // result = "<td>" + $(sum) + "</td>";
+        // result = "<td>" + $(chuyenKhoa) + "</td>";
+        // table.innerHTML = result
 }
