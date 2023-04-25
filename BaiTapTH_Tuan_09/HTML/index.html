@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO THI CUOI KY</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h2>Hien thi 1 doi tuong</h2>
+    <p id="demo0"></p>
+    <h2>Hien thi mang doi tuong</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        const person = {
+            name: "Tran Le Quoc Binh",
+            age: 20,
+            city: "Ho Chi Minh"
+        };
+        document.getElementById("demo0").innerHTML = Object.values(person);
+
+        const people = [{
+            name: "Tran Le Quoc Binh",
+            age: 20,
+            city: "Ho Chi Minh"
+        }, {
+            name: "Tran Le Quoc ",
+            age: 20,
+            city: "Ho Chi Minh"
+        }, ]
+
+        document.getElementById("demo1").innerHTML = JSON.stringify(people, null, 4);
+
+        function displayArrayObjects(arrayObjects) {
+            let text = "";
+            for (var i = 0; i < arrayObjects.length; i++) {
+                var myObject = arrayObjects[i];
+                for (var x in myObject) {
+                    text += (x + ": " + myObject[x] + " ");
+                }
+                text += "<br/>";
+            }
+
+            document.getElementById("demo2").innerHTML = text;
+        }
+        displayArrayObjects(people)
+    </script>
+
+</body>
+
+</html>
