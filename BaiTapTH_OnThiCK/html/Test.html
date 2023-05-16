@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <li class="nav-link">
+            <a href="">Trang chủ</a> </li>
+        <li class="nav-link">
+            <a href="">Giới thiệu</a> </li>
+        <li class="btn-link" type="none" data-toggle="modal" data-target="#myModal">
+            Đăng ký</li>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <td>STT</td>
+            <td>Số serial</td>
+            <td>Mô tả kiện hàng</td>
+            <td>Hình ảnh</td>
+            <td>Trọng lượng (kg)</td>
+            <td>Phí vận chuyển (VND)</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>OZMO-600</td>
+                <td>Robot Hút Bụi Lau Nhà Dreame D9 Pro</td>
+                <td>..\image\Pro9.PNG</td>
+                <td>3.5</td>
+                <td>122500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SMS25EI00G</td>
+                <td>Máy rửa chén độc lập Bosch TGB - Serie2</td>
+                <td>..\image\Bosch TGB.SMS25EI00G.PNG</td>
+                <td>48.25</td>
+                <td>1447500</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+                <td>Thùng Cherry</td>
+                <td>..\image\cherry.PNG</td>
+                <td>55kg</td>
+                <td>825000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="modal active" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 600px">
+                <div class="modal-header font-weight-bold">Thông tin kiện hàng hoá gửi</div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <label for="">Số serial</label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex ">
+                            <input type="text" name="" id="soSerial">
+                            <span class="text-danger font-italic" id="LoiSoSerial">Số serial in trên kiện hàng nếu có</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Mô tả kiện hàng</label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="moTa">
+                            <span class="font-italic text-danger" id="LoiMoTa">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Hình ảnh</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="file" name="" id="hinhAnh">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Trọng lượng (KG):</label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="trongLuong">
+                            <span class="text-danger font-italic" id="LoiTrongLuong">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Chi phí vận chuyển (VND): </label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="chiPhi" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-link" id="XacNhan" onclick="myFunction()">Xác nhận</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar " style="background-color: rgb(252, 189, 72); ">
+        <img src="../image/logo7.png" alt="">
+        <li class="nav-item" type="none">
+            <a href="">Trang chủ</a> </li>
+        <li class="nav-item" type="none">
+            <a href="">Giới thiệu</a> </li>
+        <li class="nav-item" type="none">
+            <a href="">Dịch vụ</a> </li>
+        <li class="nav-item" type="none" data-toggle="modal" data-target="#myModal">
+            <a class="nav-link">Ký gửi hàng hoá</a> </li>
+        <li class="nav-item" type="none">
+            <a href="">Liên hệ</a> </li>
+        <li class="nav-item" type="none"> </li>
+        <li class="nav-item" type="none"> </li>
+        <li class="nav-item" type="none"> </li>
+        <li class="nav-item" type="none"> </li>
+    </div>
+
+    <div>
+        <span>&lt;Form&gt;</span>
+        <div style="border: 1px solid rgb(158, 158, 158); width: 300px; float: right; padding: 10px 30px 10px 30px;">
+            <h4>Qui định thanh toán</h4>
+            <li style="list-style-type: square;">Khách cọc từ 70% - 100% số tiền của đơn hàng.</li>
+            <li style="list-style-type: square;">Hàng về sau 24-48 tiếng kể từ khi kho Trung Quốc ký nhận.</li>
+            <li style="list-style-type: square;">Shop sẽ thanh lý đơn hàng nếu sau 1 tuần khách hàng không thanh toán tiền nhận hàng.</li>
+        </div>
+    </div>
+
+    <div style="border: 2px solid rgb(190, 190, 182); margin-top: 225px;">
+        <h4 style="color: blue;">Danh sách kiện hàng hoá gửi</h4>
+        <table class="table table-bordered">
+            <thead style="font-weight: 700;">
+                <td>STT</td>
+                <td>Số serial</td>
+                <td>Mô tả kiện hàng</td>
+                <td>Hình ảnh</td>
+                <td>Trọng lượng(kg)</td>
+                <td>Phí vận chuyển (VND)</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>OZMO-600</td>
+                    <td>Robot Hút Bụi Lau Nhà Dreame D9 Pro</td>
+                    <td>..\image\Pro9.PNG</td>
+                    <td>3.5</td>
+                    <td>122500</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SMS25EI00G</td>
+                    <td>Máy rửa chén độc lập Bosch TGB - Serie 2</td>
+                    <td>..\image\Bosch TGB.SMS25EI00G.PNG</td>
+                    <td>48.25</td>
+                    <td>1447500</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td>Thùng Cherry</td>
+                    <td>..\image\cherry.PNG</td>
+                    <td>55kg</td>
+                    <td>825000</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="text-center" style="background-color: orange;">
+            Mã số: 21081801 - Họ tên: Trần Lê Quốc Bình
+        </div>
+    </div>
+
+    <div class="modal active" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 600px">
+                <div class="modal-header font-weight-bold">Thông tin kiện hàng hoá gửi</div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <label for="">Số serial</label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex ">
+                            <input type="text" name="" id="soSerial">
+                            <span class="text-danger font-italic" id="LoiSoSerial">Số serial in trên kiện hàng nếu có</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Mô tả kiện hàng</label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="moTa">
+                            <span class="font-italic text-danger" id="LoiMoTa">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Hình ảnh</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="file" name="" id="hinhAnh">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Trọng lượng (KG):</label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="trongLuong">
+                            <span class="text-danger font-italic" id="LoiTrongLuong">*</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5 col-form-label">
+                            <label for="">Chi phí vận chuyển (VND): </label>
+                        </div>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="chiPhi" disabled>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-link" id="XacNhan" onclick="myFunction()">Xác nhận</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
