@@ -42,6 +42,7 @@ function app() {
     }
 
     let chuyenKhoa = $('#chuyenKhoa').find(":selected").text()
+
     var row = "<tr><td>" + index + "</td><td>" + maBN + "</td><td>" + mk + "</td><td>" + dateString + "</td><td>" + sum + "</td><td>" + chuyenKhoa + "</td></tr>"
     $("tbody").append(row)
         // $("#myModal").modal("hide")

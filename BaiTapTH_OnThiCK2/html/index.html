@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <li class="btn btn-link" type="none">Trang chu</li>
+        <li class="btn btn-link" type="none">Trang chu</li>
+        <li class="btn btn-link" type="none">Trang chu</li>
+        <li class="btn btn-link" type="none" data-toggle="modal" data-target="#myModal">Dang ky</li>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <td>STT</td>
+            <td>Ma benh nhan</td>
+            <td>Gioi tinh</td>
+            <td>Mat khau</td>
+            <td>Ngay kham</td>
+            <td>Phu thu dich vu</td>
+            <td>Chuyen khoa</td>
+            <td>Hình ảnh</td>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="modal active" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    Thong tin kham benh
+                </div>
+                <div class="modal-body">
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4 ">Ma benh nhan</label>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="maBenhNhan">
+                            <span class="font-italic text-danger" id="tbMaBN">(*)BN-YYYYY</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4">Mat khau</label>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="text" name="" id="matKhau" placeholder="Mat Khau">
+                            <span class="font-italic text-danger" id="tbMatKhau"> (*)</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4">Gioi tinh</label>
+                        <div class="col-sm-6">
+                            <input type="radio" name="gioiTinh" id="nam" checked> Nam
+                            <input type="radio" name="gioiTinh" id="nu"> Nữ
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4">Ngày khám</label>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="date" name="" id="ngayKhamBenh">
+                            <span class="text-danger font-italic">(*)</span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4">Loại dịch vụ</label>
+                        <div class="col-sm-8 flex-column d-flex">
+                            <div>
+                                <input type="checkbox" name="" id="loaiDichVu1">Khám bệnh theo yêu cầu
+                                <input type="checkbox" name="" id="loaiDichVu2">kh
+                                <input type="checkbox" name="" id="loaiDichVu3">k
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-4 ">
+                            Chuyen khoa
+                        </div>
+                        <div class="col-sm-6">
+                            <select name="" id="chuyenKhoa">
+                                <option value="">Ngoai tong quat</option>
+                                <option value="">Nhi </option>
+                                <option value="">Noi tong quat</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4">Hình ảnh</label>
+                        <div class="col-sm-6 flex-column d-flex">
+                            <input type="file" name="" id="hinhAnh">
+                            <span class="text-danger font-italic">(*)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 ">
+                    <button class="btn btn-primary" onclick="app()">Đặt lịch</button>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
